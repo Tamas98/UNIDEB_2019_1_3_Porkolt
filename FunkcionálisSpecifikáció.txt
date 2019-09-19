@@ -21,7 +21,7 @@ nyelv országát azonosítja,(akár paintben is meg lehet rajzolni, hogy egyedib
 és a felhasználó ezekre a képekre kattintva választ nyelvet. A választott nyelv után pedig
 már csak egy zászló marad mégpedig az, amelyik választva lett.
 A tanulási folyamatnál egy szám jelzi, hogy épp hanyadik szópárnál jár. Piros és zöld színekben jelennek meg
-a jól és a rosszul megadott szavak.
+a jól és a rosszul megadott szavak .
 
 5.A program futása
 
