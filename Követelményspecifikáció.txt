@@ -1,7 +1,16 @@
-Kisbót projekt
 Követelményspecifikáció
 
 1. Bevezetés
+
+A mai Magyarországon egyre nagyobb szükség van a nyelvtudásra. Például:
+minél nagyobb valakinek a tudása a témában annál nagyobb a valószínűsége,
+hogy talál magának munkát.A hamarosan bevezetésre kerülő törvény miatt, 
+miszerint nyelvvizsga szükséges az egyetemi felvételhez,még égetőbbé teszi
+az amúgy is igen súlyos problémát, sok ember sajnos nem rendelkezik megfelelő
+nyelvtudással és nyelvérzékkel. Ezen kézségek hiánya miatt rengeteg lehetőségtől
+esnek el emberek ezrei. Ezt a gondot kívánjuk megoldani az alábbi szoftverrel,
+melynek segítségével az emberek könnyebben bővíthetik a szókincsüket a különböző
+nyelveken.
 
 2. Miért kell a rendszer?
 
@@ -12,11 +21,16 @@ akár új szavakkal is megismerkedhet és megtanulhat a felhasználó.
 
 3. Célok megfogalmazása
 
--Személyes adatok megadása (pl.: név, életkor)
--Ne egy, hanem több nyelv közül is lehessen választani
--Nyelv választás után a felhasználó idegen szavakat lát a magyar megfelelőjével
--A végén egy teszt jön, ami arról szól hogy mennyi szót tudott megtanulni/megjegyezni
--A teszt eredménye alapján javasol a program további tanulást/gyakorlást
+Célunk egy olyan alkalmazás készítése, melyel könnyedén és gyorsan bővíthetik
+az emberek a szókincsüket különböző nyelveken. Szoftverünk személyessé
+tételének érdekében az első indításnál elkérnénk a felhasználó nevét, 
+illetve életkorát. Szeretnénk, hogy program segítségével ne csak egy nyelv
+legyen tanulható egyszerre hanem akár többet is, úgy, hogy a felhasználó
+számára mindig nyitott legyen a lehetőség a nyelvváltásra. Egy tanulási
+folyamatot mindig egy kikérdezési szakasz kövessen, ahol nemcsak az idegen
+nyelvű szavak magyar megfelelőjét kell beiíni, hanem esetenként az anyanyelvű
+szó külföldi megfelelőjét. Ennek a tesztnek az eredményéhez viszonyítva
+kívánunk lehetőségeket kínálni a további tanulási folyamatot, illetve stílust illetően.
 
 4. Jelenlegi üzleti folyamatok modellje
 
