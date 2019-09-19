@@ -14,7 +14,14 @@ Funkcionális Specifikáció
 
 4.Látványterv
 
--Hogyan fog kinézni az alkalmazás. 
+-Hogyan fog kinézni az alkalmazás.
+
+A program futásakor a választható idegen nyelveknél képek jelennek meg ami az adott
+nyelv országát azonosítja,(akár paintben is meg lehet rajzolni, hogy egyedibb legyen a kép),
+és a felhasználó ezekre a képekre kattintva választ nyelvet. A választott nyelv után pedig
+már csak egy zászló marad mégpedig az, amelyik választva lett.
+A tanulási folyamatnál egy szám jelzi, hogy épp hanyadik szópárnál jár. Piros és zöld színekben jelennek meg
+a jól és a rosszul megadott szavak.
 
 5.A program futása
 
