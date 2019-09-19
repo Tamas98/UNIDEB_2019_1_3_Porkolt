@@ -2,12 +2,43 @@ Funkcionális Specifikáció
 
 1.Hogy állunk jelenleg?
 
+-Hogyan áll per pillanat a rendszer? Mi az amit már biztosan tudunk róla?
+
 2.A felhasználók álma
+
+-A felhasználók szemszögéből hogyan állna össze az "álomrendszer"
 
 3.Befolyásoló tényezők
 
+-Melyek voltak a befolyásoló tényezők ami miatt elkészült a program(Nyelvtörvény)
+
 4.Látványterv
 
-5.Mi történhet?
+-Hogyan fog kinézni az alkalmazás. 
+
+5.A program futása
+
+Minden esetet onnan kezdődően tekintsünk,hogy a felhasználó elindította
+a programot:
+
+A felhasználó a kilépés gombot választja -> a program leáll.
+
+A felhasználó a kezdés gombot választja -> Megjelennek a választható nyelvek ->
+Megtörténik a választás -> ELindul a tanulási folyamat -> Megjelennek a szavak
+az idegen nyelvű megfelelőjükkel eggyütt -> A felhasználó megpróbálja memorizálni ->
+A követhező gombra kattint -> megjelenik a következő szópár és ez így folytatódik,
+amíg legalább 10 pár meg nem jelent -> Miután a 10. is megjelent megjelenik egy teszt
+gomb -> A felhasználó tovább tanulhat mégtöbb szót(ebben az esetben folyamatosan
+bővül a tesztben visszakérdezett szavak halmaza is) vagy megáll és teszteli jelenlegi tudását ->
+A tesztre kattint a felhasználó -> Ismét szópárok jelennek meg, ezúttal viszont hiányosan. ->
+Megpróbálja kitölteni a hiányzó részt, ami lehet akár a magyar, akár az idegen nyelvű szó is ->
+A program kiértékeli a válaszát -> Visszajelez a felhasználónak ->Rossz válasz esetén megmutatja a helyes választ-> 
+Jön a következő szópár -> Elősegítve a felhasználó tanulását a már korábban megtanult szavakból is jelenhetnek meg ->
+Addig megy a teszt amíg a felhasználó minden újonan tanult szót legalább kétszer el nemt talált. ->
+Minden új szópár kétszer helyesen ki lett egészítve -> Az új szavak bekerülnek a már megtanul szavak halmazába ->
+Gratuláló szöveg megjelenítése, az újonnan tanult szavak számával együtt -> A tovább gombra kattintás ->
+Újra a kezdőképernyő megjelenítése. 
 
 6.Megvalósítható?
+
+-A tervezett rendszerhez megvannak-e a kellő eszközök és tudásunk? Itt ezeket részletezzük.
