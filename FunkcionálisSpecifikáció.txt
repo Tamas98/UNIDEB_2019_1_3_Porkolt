@@ -27,7 +27,9 @@ A felhasználó a kezdés gombot választja -> Megjelennek a választható nyelv
 Megtörténik a választás -> ELindul a tanulási folyamat -> Megjelennek a szavak
 az idegen nyelvű megfelelőjükkel eggyütt -> A felhasználó megpróbálja memorizálni ->
 A követhező gombra kattint -> megjelenik a következő szópár és ez így folytatódik,
-amíg legalább 10 pár meg nem jelent -> Miután a 10. is megjelent megjelenik egy teszt
+amíg legalább 10 pár meg nem jelent -> A második után megjelenik egy előző gomb ->
+Ha a felhasználó az előző gombot választja, akkor újra megtekintheti az előző szópárt ->
+Miután a 10.,addig még nem láttot pár is megjelent megjelenik egy teszt
 gomb -> A felhasználó tovább tanulhat mégtöbb szót(ebben az esetben folyamatosan
 bővül a tesztben visszakérdezett szavak halmaza is) vagy megáll és teszteli jelenlegi tudását ->
 A tesztre kattint a felhasználó -> Ismét szópárok jelennek meg, ezúttal viszont hiányosan. ->
@@ -41,4 +43,11 @@ Gratuláló szöveg megjelenítése, az újonnan tanult szavak számával együt
 
 6.Megvalósítható?
 
--A tervezett rendszerhez megvannak-e a kellő eszközök és tudásunk? Itt ezeket részletezzük.
+A projkt megvalósításához nem szükséges túl sok eszköz. A feladatok 
+követésére egy online feladatkövető rendszert használunk, a Trellot, ahol
+megbeszéljük a teendőket, felosztjuk a feladatokat és megbeszéljük azokat 
+egymás között. A szoftver menedzseléséhez az Apache Maven nevezetű eszközt
+használjuk. A programnak szüksége van adatbázisra, amihez JSON fájlokat
+fogunk használatba venni. Maga a program Java nyelven fog íródni, de szükség
+van egy grafikus felhasználói felületre is, ennek elkészítéséhez JavaFX
+szoftvert fogjuk használni. Verziókezelőnek pedig a git-et használjuk.
