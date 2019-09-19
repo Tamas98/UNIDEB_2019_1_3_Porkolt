@@ -3,9 +3,20 @@ Követelményspecifikáció
 
 1. Bevezetés
 
-2. Jelenlegi helyzet
+2. Miért kell a rendszer?
 
-3. Vágyálom rendszer
+Megkönnyíti a nyelvtanulást és annak gyakorlását. Azoknak előnyös elsősorban akiknek nincs szabadidejük 
+vagy pénzük például idegen nyelvi kurzusokra, órákra, tanfolyamokra vagy épp tanárhoz járni, hol ott csak annyi lenne
+a célja az adott embernek, hogy tudja mennyire ismeri az idegen szavakat illetve tesztelni saját magát. A programmal
+akár új szavakkal is megismerkedhet és megtanulhat a felhasználó.
+
+3. Célok megfogalmazása
+
+-Személyes adatok megadása (pl.: név, életkor)
+-Ne egy, hanem több nyelv közül is lehessen választani
+-Nyelv választás után a felhasználó idegen szavakat lát a magyar megfelelőjével
+-A végén egy teszt jön, ami arról szól hogy mennyi szót tudott megtanulni/megjegyezni
+-A teszt eredménye alapján javasol a program további tanulást/gyakorlást
 
 4. Jelenlegi üzleti folyamatok modellje
 
