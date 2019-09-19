@@ -1,4 +1,4 @@
-Követelményspecifikáció
+Követelmény Specifikáció
 
 1. Bevezetés
 

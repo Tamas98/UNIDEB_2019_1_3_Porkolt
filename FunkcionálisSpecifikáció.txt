@@ -1,0 +1,13 @@
+Funkcionális Specifikáció
+
+1.Hogy állunk jelenleg?
+
+2.A felhasználók álma
+
+3.Befolyásoló tényezők
+
+4.Látványterv
+
+5.Mi történhet?
+
+6.Megvalósítható?
