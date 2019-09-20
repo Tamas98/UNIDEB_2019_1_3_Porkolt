@@ -10,7 +10,18 @@ Funkcionális Specifikáció
 
 3.Befolyásoló tényezők
 
--Melyek voltak a befolyásoló tényezők ami miatt elkészült a program(Nyelvtörvény)
+A mai világban hatalmas igény van a nyelvtudás iránt. A cégeknél egy középvezetői vagy annál
+magasabb szintű munkakörben alapkövetelmény legalább az angol nyelv ismerete. De nem csak a
+munkában hanem az élet más területein is egyre fontosabb, hogy ne csak az anyanyelvünkön
+tudjunk megszólalni. Ezen tényezők miatt van szükség nyelvtanuló szoftverekre, amelyek
+a hatékony, gyors módszerükkel megkönnyítik a felhasználók számára az ismeretek megszerzését.
+Az utóbbi időben Magyarország is lepéseket tett annak érdekében, hogy szorgalmazza az
+embereket a nyelvtudás elsajátítására. Ennek egyik eszköze a nyelvtörvény amely 2019-es évtől
+megköveteli az egyetemre jelentkezőktől a nyelvvizsgát. Másik befolyásoló tényező a
+rohamosan fejlődő technika, mivel a papíralapú tanulás már elavultnak számít, így
+szükség van ilyen szoftverek kialakítására. Azért is készült ez a program, hogy elérhető
+legyen hátrányos anyagi helyzetű emebreknek is akik, nem tudják megfizetni a nyelviskolák,
+nyelvtanárok szolgáltatásait.
 
 4.Látványterv
 
