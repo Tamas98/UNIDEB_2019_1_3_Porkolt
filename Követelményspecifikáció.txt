@@ -39,7 +39,28 @@ kívánunk lehetőségeket kínálni a további tanulási folyamatot, illetve st
 
 4. Jelenlegi üzleti folyamatok modellje
 
-Jelenleg nem áll rendelkezésünkre semmilyen informatikai rendszer a nyelvtanulás segítésénel érdekében. Hagyományosan papír alapon és az internet segítségével próbálunk boldogulni, ami nem bizonyul túl hatékonynak. Nagyon nehéz menedzselni, hogy mit tanultunk meg eddig, mi van függőben vagy mik a követkető lépések. Tudásunk ellenőrzésére szintén nincs lehetőseg, kizárólag magunkra hagyatkozhatunk. Szintén problémásnak bizonyul a rendzserezés. Ezen kívül sokkalta kevésbé van ebben a formában kedv és motiváció
-a nyelvtanuláshoz. A jelenlegi üzleti folyamatok meglehetősen elavultnak számítanak manapság. Mivel nincs semmifajta rendszeresség, nem beszélve arról, hogy ebben a formában eléggé hely és időigényes folyamatnak számít. Ahogy az az előzőekben is megfogalmazásra került, nagyon fontos probléma maga nyelvtanulás, ezért is probálunk rá hatékony megoldást készíteni a projekt keretén belül.
+Jelenleg nem áll rendelkezésünkre semmilyen informatikai rendszer a nyelvtanulás segítésénel érdekében. Hagyományosan papír alapon és 
+az internet segítségével próbálunk boldogulni, ami nem bizonyul túl hatékonynak. Nagyon nehéz menedzselni, hogy mit tanultunk meg 
+eddig, mi van függőben vagy mik a követkető lépések. Tudásunk ellenőrzésére szintén nincs lehetőseg, kizárólag magunkra 
+hagyatkozhatunk. Szintén problémásnak bizonyul a rendzserezés. Ezen kívül sokkalta kevésbé van ebben a formában kedv és motiváció
+a nyelvtanuláshoz. A jelenlegi üzleti folyamatok meglehetősen elavultnak számítanak manapság. Mivel nincs semmifajta rendszeresség, 
+nem beszélve arról, hogy ebben a formában eléggé hely és időigényes folyamatnak számít. Ahogy az az előzőekben is megfogalmazásra 
+került, nagyon fontos probléma maga nyelvtanulás, ezért is probálunk rá hatékony megoldást készíteni a projekt keretén belül.
 
 5. Igényelt üzleti folyamatok modellje
+
+Egy olyan programot szeretnénk, amely elősegíti az idegennyelvek tanulását
+és fejleszti a szókincset. Nem egy általános szoftverre gondoltunk, hanem
+amelyben mindenki követheti a saját haladását és a saját ütemében képes
+fejlődni napról napra. Valamint legyen lehetőség arra, hogy több nyelv is elérhető legyen
+a programban. Kétféle része legyen a programnak egy tanulási folyamat, ahol
+megjelennek a szópárok és a felhasználó memorizálhatja őket. Másik részében
+pedig a felhasználó tesztelhesse tudását. A tanulási folyamat során a szavak
+valamilyen szempont szerint legyenek csoportosítva, gondolunk itt szófajra
+vagy témakörre. A belépéskor választható legyen a tanulni kívánt csoport.
+A teszt részben a szavak felváltva jelenjenek meg, tehát ne csak az ismert
+nyelvről kelljen az ismeretlenre fordítani, hanem az ismeretlenről az ismertre is.
+Egy kérdéssorozat számítson elvégzettnek, ha a felhasználó a teszt során minden szópárt
+legalább kétszer helyesen adott meg.
+
+
