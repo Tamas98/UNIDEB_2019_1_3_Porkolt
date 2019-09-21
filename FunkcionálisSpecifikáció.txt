@@ -19,6 +19,16 @@ Fontos az is, hogy ennek segítségével gördülékenyen menjen az adott nyelv 
 
 -A felhasználók szemszögéből hogyan állna össze az "álomrendszer"
 
+A felhasználó álma az, hogy a program segítségével a lehető leghamarabb elsajátítsa
+Az általa választott nyelvet. Egy olyan program segítségével, ami jól néz ki,
+Könnyen kezelhető, letisztult felülettel rendelkezik. Rendelkezésre állnak számára
+képek, ábrák, animációk. Saját profilt tud létrehozni. Mentheti, követheti az állását.
+Versenyezhet ismerőseivel. A létező összes nyelv közül választhat. A nyelveken belül
+többféle nehézségi szint közül választhat. Ellenőrizheti tudását. Különböző témakörök
+közül választhat. Szeretné, ha különféle tesztek írására is lehetőséget kapna.
+Úgy szabhatná testre ezáltal a nyelvtanulás folyamatát, ahogyan az neki megfelelő és
+a leginkább hatékony. 
+
 3.Befolyásoló tényezők
 
 A mai világban hatalmas igény van a nyelvtudás iránt. A cégeknél egy középvezetői vagy annál
