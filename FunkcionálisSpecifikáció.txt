@@ -4,6 +4,17 @@ Funkcionális Specifikáció
 
 -Hogyan áll per pillanat a rendszer? Mi az amit már biztosan tudunk róla?
 
+A rendszer jelenleg a tervezés és az ötletelés szakaszában van.
+A csapat minden tagja felvázolja az elképzelését, felsorakoztatja az érveit,
+amiket összegyűjtünk, mérlegelünk. Megvitatjuk mi az amit felhasználunk, 
+milyen irányokba lehetne még elmozdulni. Jelen pillanatban biztosan tudjuk azt,
+hogy egy nyelvtanulást segítő rendszert szeretnénk létrehozni. Szeretnénk, hogy
+több idegen nyelvet kezeljen a program, akár több szinten is. Szeretnénk, hogy
+Több felhasználó tudja használni, tehát legyen bejelentkezési lehetőség. Célunk,
+Hogy könnyen kezelhető programot hozzunk létre, ami letisztult és átlátható.
+Fontos az is, hogy ennek segítségével gördülékenyen menjen az adott nyelv tanulása
+és egyben eredményes legyen.
+
 2.A felhasználók álma
 
 -A felhasználók szemszögéből hogyan állna össze az "álomrendszer"
