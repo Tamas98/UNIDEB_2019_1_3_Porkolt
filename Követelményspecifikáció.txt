@@ -4,12 +4,12 @@ Követelmény Specifikáció
 
 A mai Magyarországon egyre nagyobb szükség van a nyelvtudásra. Például:
 minél nagyobb valakinek a tudása a témában annál nagyobb a valószínűsége,
-hogy talál magának munkát.A hamarosan bevezetésre kerülő törvény miatt, 
+hogy talál magának munkát.A hamarosan bevezetésre kerülő törvény, 
 miszerint nyelvvizsga szükséges az egyetemi felvételhez,még égetőbbé teszi
 az amúgy is igen súlyos problémát, sok ember sajnos nem rendelkezik megfelelő
 nyelvtudással és nyelvérzékkel. Ezen kézségek hiánya miatt rengeteg lehetőségtől
 esnek el emberek ezrei. Ezt a gondot kívánjuk megoldani az alábbi szoftverrel,
-melynek segítségével az emberek könnyebben bővíthetik a szókincsüket a különböző
+melynek segítségével az emberek könnyebben bővíthetik a szókincsüket a különböző 
 nyelveken.
 
 2. Miért kell a rendszer?
