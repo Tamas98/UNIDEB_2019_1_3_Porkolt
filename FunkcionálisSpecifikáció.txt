@@ -63,7 +63,7 @@ valamint piros és zöld színekben jelennek meg a jól és a rosszul megadott s
 amiket a felhasználó válaszként beírhat ezzel jelezve, hogy rosszul válaszolt az adott feladatra,
 ez esetben megjelenik, hogy mit kellett volna beírnia válaszként a megadott szó helyére. Itt is van jobb alul
 egy "Következő" feliratú gomb ami a teszt következő szópárjához vezet. A teszt végén, amikor már mindent
-jól adott meg kétszer, előjön egy felugró ablak amin egy "Gratulálunk" szöveg és, az újonnan megtanult
+jól adott meg kétszer, előjön egy felugró ablak amin egy "Gratulálunk" szöveg, és az újonnan megtanult
 szavak száma van. Ezen a felugró ablak bal alsó részében szintén egy gomb van "Vissza a kezdőképernyőre" felirattal.
 Minden gombra igaz, hogyha az egeret rávisszük, akkor színt vált a háttere.
 
