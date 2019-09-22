@@ -48,12 +48,24 @@ nyelvtanárok szolgáltatásait.
 
 -Hogyan fog kinézni az alkalmazás.
 
-A program futásakor a választható idegen nyelveknél képek jelennek meg ami az adott
-nyelv országát azonosítja,(akár paintben is meg lehet rajzolni, hogy egyedibb legyen a kép),
+A program futásakor középen felül egy "Üdvözlünk az alkalmazásban!" felirat és a választható idegen nyelvek
+képei jelennek meg, ami az adott nyelv országát azonosítja,(akár paintben is meg lehet rajzolni, hogy egyedibb legyen a kép),
 és a felhasználó ezekre a képekre kattintva választ nyelvet. A választott nyelv után pedig
-már csak egy zászló marad mégpedig az, amelyik választva lett.
-A tanulási folyamatnál egy szám jelzi, hogy épp hanyadik szópárnál jár. Piros és zöld színekben jelennek meg
-a jól és a rosszul megadott szavak .
+már csak egy zászló marad mégpedig az, amelyik választva lett és az első szópár megjelenik.
+A program bal alsó sarkában egy gomb biztosítja a visszalépést "Ez nem jó!" felirattal, ha esetleg más nyelvet választanánk.
+A másik oldal alján pedig "Következő" szöveggel ellátott gomb látható ami a következő szópár megjelenését
+fogja eredményezni, a szópárok a képernyő közepén fognak megjelenni, illetve itt már egy "Előző" gomb is 
+megjelenik, ha esetleg újra megszeretnénk tekinteni az előző szópárt. A tanulási folyamatnál egy szám jelzi,
+hogy épp hanyadik szópárnál jár a felhasználó. A 10. szópár után, középen alul megjelenik a teszt gomb, 
+a teszt elkezdéséhez, de persze itt még megmarad a "Következő" feliratú gomb, ha 10-nél több
+szót szeretnénk egyszerre megtanulni. A teszt résznél középen felül egy "Teszt" felirat jelenik meg, 
+valamint piros és zöld színekben jelennek meg a jól és a rosszul megadott szavak háttere, 
+amiket a felhasználó válaszként beírhat ezzel jelezve, hogy rosszul válaszolt az adott feladatra,
+ez esetben megjelenik, hogy mit kellett volna beírnia válaszként a megadott szó helyére. Itt is van jobb alul
+egy "Következő" feliratú gomb ami a teszt következő szópárjához vezet. A teszt végén, amikor már mindent
+jól adott meg kétszer, előjön egy felugró ablak amin egy "Gratulálunk" szöveg és, az újonnan megtanult
+szavak száma van. Ezen a felugró ablak bal alsó részében szintén egy gomb van "Vissza a kezdőképernyőre" felirattal.
+Minden gombra igaz, hogyha az egeret rávisszük, akkor színt vált a háttere.
 
 5.A program futása
 

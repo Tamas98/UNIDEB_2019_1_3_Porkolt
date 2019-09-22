@@ -19,7 +19,7 @@ tapasztalata idegen szavak tanulásában vagy nem tudják, hogy hogyan kell új 
 és ebben remekül tudnak segíteni az ilyen szoftverek. Egyéb esetekben, ami hozzátéve az idegen
 nyelven tanulók esetén nagy részét képezi azok, akiknek nincs szabadidejük vagy pénzük idegen nyelvi kurzusokra,
 órákra, tanfolyamokra vagy épp tanárhoz járni, hol ott csak annyi lenne a célja
-az adott embernek, hogy tudja mennyire ismeri az idegen szavakat illetve tesztelni saját magát.
+az adott embernek, hogy tudja, mennyire ismeri az idegen szavakat illetve tesztelni saját magát.
 A programmal akár új szavakkal is megismerkedhet és megtanulhat a felhasználó, illetve
 a tesztnek köszönhetően be tudja magát azonosítani a felhasználó, hogy épp hol jár, milyen
 gyorsan "ragadnak" rá az új szavak és akár önbizalmat is adhat egy nyelvizzsga előtt.
