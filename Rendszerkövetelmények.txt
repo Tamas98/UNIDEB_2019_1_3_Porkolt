@@ -1,0 +1,104 @@
+Rendszerkspecifikáció
+
+1. Mit készítünk?
+
+Egy olyan szoftvert szeretnénk készíteni, aminek segítségével az emberek
+könnyedén fejleszthetik nyelvtudásukat. Különböző nyelvek egyszerre történő
+tanulását is szeretnénk lehetővé tenni a programban, illetve céljaink
+közé tartozik, hogy a programban felhasználónév és jelszó segítségével
+elkülönítsük a felhasznlók előrehaladását, így akár ugyan azon számítógépen
+egyszerre akár többen is használhatják a programot gond nélkül. Szeretnénk
+elkülöníteni benne a szófajokat is, így specifikusabban tudnak a felhasználók
+tanulni. A program feladata lesz az is,hogy kikérdezze a felhasználó által
+tanult új szavakat, beleszőve a kikérdezés folyamatába a korábban már megtanult
+szavakat is, ezzel ismételve, hogy biztosak legyünk benne, hogy nemcsak ideig
+óráig tartott a tanuló tudása.
+
+2. Miért készítjük?
+
+Szoftverünkkel azon emberek problémáját kívánjuk megoldani, akiknek nehézkesen
+megy a nyelvtanulás, nincs pénzük a drága nyelvkönyvekre vagy magántanárra, ahogyan
+már említettük a Követelmény Specifikációban. Bár szoftverünk célja jelen pillanatban
+csak a választott nyelven belüli szókincs bővítése, véleményünk szerint az idegen nyelven
+történő magabiztos felszólalás alapja egy szilárd szókincs.
+
+3. Hogyan valósítjuk meg?
+
+Elsősorban amire szükségünk lesz, az egy User osztály, amiben egy felhasználó
+nevét, kódolt jelszavát, illetve a már megtanult szópárokat tároljuk egy map-ben,ahol
+a magyar nyelvű szó a kulcs, míg az idegen nyelvű az érték rész. A jelszó  kódolosa
+a következőhöz hasonlóan történjen:
+
+	String jelszo  = "jelszo";
+	String hash1 = "nisofnipafnspsa$cas2324";
+	String hash2 = "nsnbpivan/&@ejof46546fsafvca";
+
+	String kodolt = hash1 + Caesar(jelszo) + hash2;
+
+,ahol a Caesar egy függvényt jelöl, ami Caesar kódolással lekódolja a jelszó részt.
+Ennek megfelelően a visszaellenőrzés úgy történjen:
+
+	Char[] pwd = pwdField.getPassword();
+	if(user.passwd.equals(hash1 + Caesar(pwd)+hash2))
+		//Sikeres bejelentkezés
+	else
+		//Sikertelen bejelentkezés
+
+Amennyiben a felhasználó elfelejtené a jelszavát biztosítanunk kell neki egy
+lehetőséget,amivel megváltoztatja.Ennek érdekében a User osztályban tárolni
+kell egy jelszó-visszaállító kódot, amit a felhasználótól majd elkérhet a 
+program, a helyreállítás érdekében. A jelszó visszanyerésére, használjuk
+a Stringek substr() metódusát, valamint írjunk egy Caesar dekódolót. 
+A helyesen beütött kód utána jelenjen meg a felhasználónak a jelenlegi 
+jelszava, valamint egy kérdés, hogy szeretné-e megváltoztatni ezt. Biztosítsunk
+lehetőséget a megváltoztatásra. A program csak sikeres bejelentkezés vagy
+a "Használat vendégként" gomb választása után induljon el.
+
+Az adatok tárolására .json fájlokat használjunk, melyek írásához, illetve
+olvasásához a gson könyvtárat használjuk. Legalább két adatbázisra lesz
+szükségünk a projekt megvalósításához. Az egyik adatbázisban a felhasználók
+adatait tároljuk, a felhasználónevüket, jelszavukat és a már megtanult szavak
+listáját map-ként. 
+
+	[
+		{
+			"username": felhasznalonev,
+			"password": jelszo,
+			"recover": helyreallito,
+			"angol": {
+					"magyar1": "angol1",
+					"magyar2": "angol2"
+					...
+					},
+			"francia": {
+					"magyar1": "francia1",
+					"magyar2": "francia2"
+					...
+				}
+		}
+	]
+
+A másik fájl a nyelveket és a szópárokat tartalmazza.
+Itt választhatjuk azt is, hogy minden nyelvnek külön fájlt hozunk létre.
+Amennyiben az egy fájlost megoldást választjuk, úgy kulcs-érték párokként
+tároljuk a nyelveket és a szavakat, ahol a kulcs a nyelv, az érték pedig
+a szótárunk. 
+
+	[
+		{
+			"angol": {
+					"magyar1": "angol1",
+					"magyar2": "angol2"
+					...
+					},
+			"francia": {
+					"magyar1": "francia1",
+					"magyar2": "francia2"
+					...
+				}
+		}
+	]
+
+A nyelvek különböző fájlokban való tárolása esetén pedig a felhasználó
+választása alapján csak kiválasztjuk melyik json fájlt töltse be a program,
+hogy a választott nyelvű szavak szótárát kapjuk.
