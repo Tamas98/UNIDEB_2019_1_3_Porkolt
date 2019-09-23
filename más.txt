@@ -146,9 +146,7 @@ hogy a választott nyelvű szavak szótárát kapjuk.
 
 3.3 Kérdés ellenőrzés
 A felhasználó által megadott fordítást ellenőriznie kell a programnak. A szót először kisbetűsre kell
-átváltani, hogy ne számítson hogyan lett megadva szó nagy vagy kis betűvel. Majd a megadott szót betűnként össze kell
-hasonlítani a kérdezett szó párjával. Ez Javaban történhet az equals metódussal. Ha helyes a metódus visszaad egy truet vagy falset,
-ezzel látszik, hogy helyesen adte-e meg a felhasználó a szót.
+átváltani, hogy ne számítson hogyan lett megadva szó nagy vagy kis betűvel. Majd a 
 
 4. Üzleti folyamatok modellje
 
@@ -173,24 +171,7 @@ Tudjon tetszés szerint tanulni kívánt nyelvet választani. Fontos szempont, h
 Illetve ne legyen nagy rendszerigénye, hogy minél széresebb körben el tudjon terjedni. Ha internetes kapcsolat szükséges, akkor pedig a lehető legkevesebb adatforgalmat generálja. 
 A felhasználó részéről feltétel, hogy rendelkezzen ezekhez megfelelő számítógéppel.
 
-6. Architektúrális terv 
-	6.1 Rendszer bővíthetősége
-
-	Mivel egy nyelvtanulós programról beszélünk, ezért fontos lehet, hogy több nyelv közül is lehessen
-választani a későbbiekben, ami a felhasználó közönséget növeli. A rendszer felépítéséből adódóan
-lehetőségünk lehet többféle választást kínálni a felhasználóknak a témák kapcsán, hogy milyen
-témakörökben szeretnék erősíteni a tudásukat.
-
-	6.2 Biztonsági funkciók
-
-	A felhasználóknak biztosítunk egy bejelentkezési lehetőséget, jelszóval ellátva
-és így mindenki saját maga nyomon tudja követni, a már megtanult szavait.
-A jelszó titkosítására úgynevezett "Caesar" kódolási technikát alkalmazunk, kiegészítve
-két darab String típusú "hash"-el, ami a megadott jelszó köré kerül, így megnehezítve az
-esetleges jelszó feltöréseket.
-
-
-7. Tesztterv
+6. Tesztterv
 
 	Szintén fontos pont a rendzserünk sikeres elkészítésének folyamatában az, hogy megfelelő tesztelést vigyünk véghez. 
 Nem szeretnénk, ha a kiadás után súlyos vagy akár kevébé súlyos hibák benne maradnának. Illetve valami nem működne rendesen, 
@@ -213,7 +194,7 @@ A program legyen megfelelőképp gyors, hogy a felhasználónak öröm legyen ha
 	elmenti a szópárokat, hogy legközelebb azt már ne kérdezze, kis és nagybetűt nem veszi figyelmebe az 
 	ellenőrzés, a szavakat helyesen ellenőrzi.
 
-8. Karbantartás
+7. Karbantartás
 
 	Természetesen programunkat elkészülte után nem szeretnénk bejefezettnek tekinteni. A sikeres teszt elvégzésétől függetlenül, 
 ha bármilyen hiba előjön, azt javítani szeretnénk minél hamarabb, nem cserben hagyva felhasználóinkat. Emelett szeretnénk a későbbiekben tovább fejleszteni szoftverünket, 
