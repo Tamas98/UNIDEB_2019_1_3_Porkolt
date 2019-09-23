@@ -143,3 +143,29 @@ a szótárunk.
 A nyelvek különböző fájlokban való tárolása esetén pedig a felhasználó
 választása alapján csak kiválasztjuk melyik json fájlt töltse be a program,
 hogy a választott nyelvű szavak szótárát kapjuk.
+
+4. Üzleti folyamatok modellje
+
+	A most fentálló nyelvtanulási módszerünk nem felhasználóbarát. A papíron történő
+tanulási folyamatok elavultnak tekinthetőek. Másrészt időigényes, nem végezhető
+Bárhol és bármikor. Ezzel szemben az új üzleti folyamatunk segítségével a felhasználó
+igényeit a mai kornak megfelelő módszerekkel fogjuk kielégítni. Azzal, hogy digitális
+platformra helyezzük a tanulást. Ehhez elég rendelkezni a programunkkal, amit már
+bárhol bármikor bárki használhat gyorsan és egyszerűen. Így megfelelő szolgáltatást
+tudunk nyújtani mindenki számára, aki nyelvet szeretne tanulni. A program futtatása
+után a felhasználó elkészíti a profilját, ha az még nem létezik. Ha igen, akkor bejelentkezik. Ezután kiválasztja azt, hogy épp milyen nyelven szeretne éppen tanulni.
+Majd jöhet is a tanulás folyamata, amit a felhasználó egyszerűen, könnyen kezelhetően,
+Intuitívan tud kezelni és használni.
+
+5. Követelmények
+
+	Programunkak rendelkezni kell funkcionális, illetve nem funkcionális követelményekkel is. Fontos számunkra, hogy a kevésbé profi számítógépes felhasználók is boldogulni tudjanak a rendszerünkkel, ne jelenthessen ez semmiféle hátráltató tényezőt. Emiatt az alkalmazásunknak a lehető leginkább egyszerűnek és könnyen kezelhetőnek kell lennie. A kezelőfelütnek egyszerűen átláthatónak, letisztultnak, szépnek kell lennie. A felhasználónak legyen lehetősége saját profilt csinálni. Legyen lehetősége bejelentkeznie. Tudjon tetszés szerint tanulni kívánt nyelvet választani. Fontos szempont, hogy programunk ne foglaljon túlságosan sok tárhelyet. Illetve ne legyen nagy rendszerigénye, hogy minél széresebb körben el tudjon terjedni. Ha internetes kapcsolat szükséges, akkor pedig a lehető legkevesebb adatforgalmat generálja. A felhasználó részéről feltétel, hogy rendelkezzen ezekhez megfelelő számítógéppel.
+
+6. Tesztterv
+
+	Szintén fontos pont a rendzserünk sikeres elkészítésének folyamatában az, hogy megfelelő tesztelést vigyünk véghez. Nem szeretnénk, ha a kiadás után súlyos vagy akár kevébé súlyos hibák benne maradnának. Illetve valami nem működne rendesen, esetleg egyáltalán vagy nem úgy ahogy mi azt szeretnénk. Emiatt folyamatosan ellenőrizni fogjuk a programunk működését már a fejlesztés elkezdésének első szakaszaiban is. Ebben mindenki részt fog venni, illetve a későbbiekben külsős tesztelőket is bevonhatunk majd a teljes siker érdekében. Mindennek tökéletesen kell működnie ahhoz, hogy  a teszt sikeres legyen. Kezdve azzal, hogy a felhasználi felületek rendesen betöltődnek-e, a menü elemek, a gombok, a felületek amikkel interakcióba lépnek a felhasználók mind mind működnek, méghozzá pontosan úgy ahogy azt mi elvárjuk. A bejelentkezés folyamatának mindenképp működőképesnek és gördülékenynek kell lennie. Pont úgy, mint ahogyan a nyelv kiválasztásának és azt követő teljes tanulási folyamatnak. A program legyen megfelelőképp gyors, hogy a felhasználónak öröm legyen használnia.
+
+7. Karbantartás
+
+	Természetesen programunkat elkészülte után nem szeretnénk bejefezettnek tekinteni. A sikeres teszt elvégzésétől függetlenül, ha bármilyen hiba előjön, azt javítani szeretnénk minél hamarabb, nem cserben hagyva felhasználóinkat. Emelett szeretnénk a későbbiekben tovább fejleszteni szoftverünket, folyamatosan új funkciókat hozzáadva. Ennek érdekében szeretnénk kontaktot tartani a felhasználóinkkal, hallgatni az észrevételeikre. Illetve, ha bármilyen probléma merül fel részükről, annak megoldásában a segítségükre lenni. Ezáltal a jövőben várhatóak frissítések, amiket szintén tesztelni fogunk, ahogy az a teszttervek alcím alatt megtalálható. Szeretnénk, ha ez a projekt egy minél szélesebb palettát fedne le a jövőben a nyelvtanulás témakörön belül. Amivel akár az adott nyelv teljes elsajátítása lehetséges.
+
