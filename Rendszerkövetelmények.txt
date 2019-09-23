@@ -49,7 +49,7 @@ Ennek megfelelően a visszaellenőrzés úgy történjen:
 		//Sikertelen bejelentkezés
 
 	3.1.2 A jelszó visszaállítása
-	
+
 	Amennyiben a felhasználó elfelejtené a jelszavát biztosítanunk kell neki egy
 lehetőséget,amivel megváltoztatja.Ennek érdekében a User osztályban tárolni
 kell egy jelszó-visszaállító kódot, amit a felhasználótól majd elkérhet a 
@@ -77,14 +77,28 @@ listáját map-ként.
 			"password": jelszo,
 			"recover": helyreallito,
 			"angol": {
-					"magyar1": "angol1",
-					"magyar2": "angol2"
-					...
+					'főnév': {
+						"magyar1": "angol1",
+						"magyar2": "angol2"
+						...
+						},
+					"melleknev": {
+						"magyar1": "angol1",
+						"magyar2": "angol2"
+						...
+						}
 					},
 			"francia": {
+				"melleknev": {
 					"magyar1": "francia1",
 					"magyar2": "francia2"
 					...
+					},
+				'főnév': {
+						"magyar1": "francia1",
+						"magyar2": "francia2"
+						...
+					}
 				}
 		}
 	]
@@ -100,14 +114,28 @@ a szótárunk.
 	[
 		{
 			"angol": {
-					"magyar1": "angol1",
-					"magyar2": "angol2"
-					...
+					'főnév': {
+						"magyar1": "angol1",
+						"magyar2": "angol2"
+						...
+						},
+					"melleknev": {
+						"magyar1": "angol1",
+						"magyar2": "angol2"
+						...
+						}
 					},
 			"francia": {
+				"melleknev": {
 					"magyar1": "francia1",
 					"magyar2": "francia2"
 					...
+					},
+				'főnév': {
+						"magyar1": "francia1",
+						"magyar2": "francia2"
+						...
+					}
 				}
 		}
 	]

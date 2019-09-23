@@ -24,12 +24,13 @@ A programmal akár új szavakkal is megismerkedhet és megtanulhat a felhasznál
 a tesztnek köszönhetően be tudja magát azonosítani a felhasználó, hogy épp hol jár, milyen
 gyorsan "ragadnak" rá az új szavak és akár önbizalmat is adhat egy nyelvizzsga előtt.
 
-3. Célok megfogalmazása
+3. Célok megfogalmazása 
 
 Célunk egy olyan alkalmazás készítése, melyel könnyedén és gyorsan bővíthetik
 az emberek a szókincsüket különböző nyelveken. Szoftverünk személyessé
 tételének érdekében az első indításnál elkérnénk a felhasználó nevét, 
-illetve életkorát. Szeretnénk, hogy program segítségével ne csak egy nyelv
+illetve életkorát.Tervezünk egy bejelentkezést is, hogy biztosítsuk a felhasználóknak
+az egyéni előrehaladást.Szeretnénk, hogy program segítségével ne csak egy nyelv
 legyen tanulható egyszerre hanem akár többet is, úgy, hogy a felhasználó
 számára mindig nyitott legyen a lehetőség a nyelvváltásra. Egy tanulási
 folyamatot mindig egy kikérdezési szakasz kövessen, ahol nemcsak az idegen

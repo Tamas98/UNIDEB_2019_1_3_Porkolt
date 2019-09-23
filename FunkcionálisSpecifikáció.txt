@@ -72,6 +72,13 @@ Minden gombra igaz, hogyha az egeret rávisszük, akkor színt vált a háttere.
 Minden esetet onnan kezdődően tekintsünk,hogy a felhasználó elindította
 a programot:
 
+Bejelentkezés -> Sikeres bejelentkezés -> Indul a program.
+Bejelentkezés -> Sikertelen bejelentkezés -> Újrapróbálás -> Sikertelen bejelentkezés ->
+Elfelejtett jelszó -> Visszaállító kód -> Jelszó megjelenítése helye megadás esetén ->
+Helytelen esetén újrakérdezés -> Helyes megadás esetén jelenlegi jelszó megjelenítése ->
+Szeretne-e új jelszót? -> Igen, új jelszó bekérése és beállítása -> Nem, ablak bezárása és visszatérés
+a bejelentkezéshez.
+
 A felhasználó a kilépés gombot választja -> a program leáll.
 
 A felhasználó a kezdés gombot választja -> Megjelennek a választható nyelvek ->
