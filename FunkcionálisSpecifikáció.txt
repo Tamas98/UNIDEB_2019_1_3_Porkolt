@@ -48,10 +48,12 @@ nyelvtanárok szolgáltatásait.
 
 -Hogyan fog kinézni az alkalmazás.
 
-A program futásakor középen felül egy "Üdvözlünk az alkalmazásban!" felirat és a választható idegen nyelvek
-képei jelennek meg, ami az adott nyelv országát azonosítja,(akár paintben is meg lehet rajzolni, hogy egyedibb legyen a kép),
-és a felhasználó ezekre a képekre kattintva választ nyelvet. A választott nyelv után pedig
-már csak egy zászló marad mégpedig az, amelyik választva lett és az első szópár megjelenik.
+A program futásakor középen felül egy "Üdvözlünk az alkalmazásban!" felirat, alatta pedig egy felület jelenne meg,
+ahol a felhasználó bejelentkezhet vagy választhatja a "belépés vendégként" gombot.Sikeres bejelentkezés
+után a választható idegennyelvek képei jelennek meg, ami az adott nyelv országát azonosítja,
+(akár paintben is meg lehet rajzolni, hogy egyedibb legyen a kép), és a felhasználó ezekre a
+képekre kattintva választ nyelvet. A választott nyelv után pedig már csak egy zászló marad mégpedig az,
+amelyik választva lett és az első szópár megjelenik.
 A program bal alsó sarkában egy gomb biztosítja a visszalépést "Ez nem jó!" felirattal, ha esetleg más nyelvet választanánk.
 A másik oldal alján pedig "Következő" szöveggel ellátott gomb látható ami a következő szópár megjelenését
 fogja eredményezni, a szópárok a képernyő közepén fognak megjelenni, illetve itt már egy "Előző" gomb is 
