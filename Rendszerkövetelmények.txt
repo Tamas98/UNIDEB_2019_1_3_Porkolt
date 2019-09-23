@@ -144,11 +144,15 @@ A nyelvek különböző fájlokban való tárolása esetén pedig a felhasznál�
 választása alapján csak kiválasztjuk melyik json fájlt töltse be a program,
 hogy a választott nyelvű szavak szótárát kapjuk.
 
-3.3 Kérdés ellenőrzés
-A felhasználó által megadott fordítást ellenőriznie kell a programnak. A szót először kisbetűsre kell
+3.3 A visszakérdezés folyamata
+A felhasználó által újonnan megtanult szavak listájából random kiválasztunk egy szópárt, amiből véletlenszerűen
+kivesszük a magyar vagy az idegen nyelvi szót. Ezután megjelenítjük ezt a felhasználónak akinek ki kell egészítenie a helyes
+fordítással. A felhasználó által megadott fordítást ellenőriznie kell a programnak. A szót először kisbetűsre kell
 átváltani, hogy ne számítson hogyan lett megadva szó nagy vagy kis betűvel. Majd a megadott szót betűnként össze kell
 hasonlítani a kérdezett szó párjával. Ez Javaban történhet az equals metódussal. Ha helyes a metódus visszaad egy truet vagy falset,
-ezzel látszik, hogy helyesen adte-e meg a felhasználó a szót.
+ezzel látszik, hogy helyesen adte-e meg a felhasználó a szót. Helyes megadás után a szöveg mező zöldre változik, ha helytelenül adják meg
+akkor pedig pirosra változik és megjeleníti a helyes választ. Ezután ismét válasszunk szópárt. Ha a felhasználó kétszer eltalálta ugyanazt a szót
+az átkerül a megtanult szavak listájába.
 
 4. Üzleti folyamatok modellje
 
