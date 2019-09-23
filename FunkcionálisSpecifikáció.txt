@@ -75,7 +75,7 @@ a programot:
 A felhasználó a kilépés gombot választja -> a program leáll.
 
 A felhasználó a kezdés gombot választja -> Megjelennek a választható nyelvek ->
-Megtörténik a választás -> ELindul a tanulási folyamat -> Megjelennek a szavak
+Megtörténik a választás -> Elindul a tanulási folyamat -> Megjelennek a szavak
 az idegen nyelvű megfelelőjükkel eggyütt -> A felhasználó megpróbálja memorizálni ->
 A követhező gombra kattint -> megjelenik a következő szópár és ez így folytatódik,
 amíg legalább 10 pár meg nem jelent -> A második után megjelenik egy előző gomb ->
@@ -94,9 +94,9 @@ Gratuláló szöveg megjelenítése, az újonnan tanult szavak számával együt
 
 6.Megvalósítható?
 
-A projkt megvalósításához nem szükséges túl sok eszköz. A feladatok 
+A projekt megvalósításához nem szükséges túl sok eszköz. A feladatok 
 követésére egy online feladatkövető rendszert használunk, a Trellot, ahol
-megbeszéljük a teendőket, felosztjuk a feladatokat és megbeszéljük azokat 
+eggyeztetjük a teendőket, felosztjuk a feladatokat és megbeszéljük azokat 
 egymás között. A szoftver menedzseléséhez az Apache Maven nevezetű eszközt
 használjuk. A programnak szüksége van adatbázisra, amihez JSON fájlokat
 fogunk használatba venni. Maga a program Java nyelven fog íródni, de szükség
