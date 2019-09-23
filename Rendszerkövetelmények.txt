@@ -24,7 +24,11 @@ történő magabiztos felszólalás alapja egy szilárd szókincs.
 
 3. Hogyan valósítjuk meg?
 
-Elsősorban amire szükségünk lesz, az egy User osztály, amiben egy felhasználó
+3.1 A bejelentkezés
+
+	3.1.1 A jelszó titkosítása
+
+	Elsősorban amire szükségünk lesz, az egy User osztály, amiben egy felhasználó
 nevét, kódolt jelszavát, illetve a már megtanult szópárokat tároljuk egy map-ben,ahol
 a magyar nyelvű szó a kulcs, míg az idegen nyelvű az érték rész. A jelszó  kódolosa
 a következőhöz hasonlóan történjen:
@@ -44,7 +48,9 @@ Ennek megfelelően a visszaellenőrzés úgy történjen:
 	else
 		//Sikertelen bejelentkezés
 
-Amennyiben a felhasználó elfelejtené a jelszavát biztosítanunk kell neki egy
+	3.1.2 A jelszó visszaállítása
+	
+	Amennyiben a felhasználó elfelejtené a jelszavát biztosítanunk kell neki egy
 lehetőséget,amivel megváltoztatja.Ennek érdekében a User osztályban tárolni
 kell egy jelszó-visszaállító kódot, amit a felhasználótól majd elkérhet a 
 program, a helyreállítás érdekében. A jelszó visszanyerésére, használjuk
@@ -54,7 +60,12 @@ jelszava, valamint egy kérdés, hogy szeretné-e megváltoztatni ezt. Biztosít
 lehetőséget a megváltoztatásra. A program csak sikeres bejelentkezés vagy
 a "Használat vendégként" gomb választása után induljon el.
 
-Az adatok tárolására .json fájlokat használjunk, melyek írásához, illetve
+
+3.2 Az adatok tárolása
+
+	3.2.1 A felhasználó adatai
+
+	Az adatok tárolására .json fájlokat használjunk, melyek írásához, illetve
 olvasásához a gson könyvtárat használjuk. Legalább két adatbázisra lesz
 szükségünk a projekt megvalósításához. Az egyik adatbázisban a felhasználók
 adatait tároljuk, a felhasználónevüket, jelszavukat és a már megtanult szavak
@@ -78,7 +89,9 @@ listáját map-ként.
 		}
 	]
 
-A másik fájl a nyelveket és a szópárokat tartalmazza.
+	3.2.2 A szótárak tárolása
+
+	A másik fájl a nyelveket és a szópárokat tartalmazza.
 Itt választhatjuk azt is, hogy minden nyelvnek külön fájlt hozunk létre.
 Amennyiben az egy fájlost megoldást választjuk, úgy kulcs-érték párokként
 tároljuk a nyelveket és a szavakat, ahol a kulcs a nyelv, az érték pedig
