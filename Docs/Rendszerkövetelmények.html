@@ -413,16 +413,62 @@
 
 		<h2>9. Architektúrális terv</h2> 
 			
-		<h3>9.1 Rendszer bővíthetősége</h3>
+		<h3>9.1 Egy architektúrális tervezési minta</h3>
+			
+		<p>
+			A szoftverünk megvalósítása az MVC, magyarul MNV azaz a Modell-Nézet-Vezérlő elveit fogja követni,
+			ami azt jelenti, hogy az alkalmazásunkat több rétegre bontjuk fel, ami áll a megjelenítésből, azaz 
+			a felhasználói felületből, amit a szoftvert használók ténylegesen látnak az alkalmazásból, áll a
+			"logikából", ami a felhasználó által véghezvitt eseményeket, műveleteket dolgozza fel, ami
+			kiválthat további eseménysorozatot, illetve áll a tárolt adatok kezelésével foglalkozó részből,
+			jellemzően az adatokat egy adatbázisban tárolják, mi jelen esetben .json fájlokat használunk
+			az adatok tárolásához. Azzal, hogy ezt a megvalósítást választottuk nagyban megkönnyíti a munkánkat,
+			hiszen átláthatóbb lesz ezzel legfőképpen a kódunk.
+		</p>
+			
+		<h3>9.2 Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai</h3>
+			
+		<p>
+			A már korábban említett minta alapján, azaz a Modell-Nézet-Vezérlő szerint alakul 
+			az alkalmazásunk rétegei. A program elején, amikor elkérünk néhány adatot a felhasználótól, 
+			aki megadja a kért adatokat, ezzel bekerülnek egy .json adatok tárolására alkalmazott fájlba,
+			amivel már módosítottuk az adatbázisunkat. Tehát már az elején kapcsolat alakul ki az adatbázis,
+			a vezérlő és a nézet között, ahol a felhasználó adta meg a szükséges információkat. 
+			Továbbiakban a programunk egy fontos részét képezi a tanulási folyamat rész, ahol a felhasználó
+			tanulja a választott nyelvet, ami szintén egy külön .json fájlban van tárolva,tehát itt is történik
+			kommunikáció az említett rétegek között. Hasonlóan a tanulási folyamat részhez, a visszakérdezés
+			folyamata is jelentős a programunkban, mint ismert, a tanulás folyamat alatt a program megjegyzi,
+			hogy a felhasználó miket tanult már meg és ebből véletlenszerűen választva jelnnek meg a szópárok
+			felváltva hiányosan, ahol a felhasználónak kell a tudása alapján megfelelően kitölteni a hiányzó részt, 
+			tehát a háttérben egy ellenőrzés történik a felhasználó tudta nélkül és a begépelt válasznak megfelelően
+			zöld, tehát jó vagy pedig piros, azaz rossz választ adott meg, ezzel is manipulálva a kimenetet,
+			hogy milyen választ adott. Programunk fő komponensei közé tartozik a tesztek végrehajtása.
+			A lehető legtöbb tesztek végrehajtása elősegíti a programunk megfelelő működését.
+		</p>
+			
+		<h3>9.3 Változások kezelése</h3>
+			
+		<p>
+			A programunk kódjának megírása közben igyekszünk törekedni arra, hogy esetleges jövőbeli kódbeli változtatások
+			ne történjen nagy fejfájással. Igyekszünk tehát olyan rugalmas programot írni, amit ha később valamiért
+			megszeretnént bizonyos szintig módosítani, akkor azt a jól rétegelt és felépített kódot minden további nélkül
+			könnyedén megtudjuk csinálni
+			Tovább, ha egy olyan ember nézne rá a kódra aki először látja, például egy cég megvette a programot vagy éppen
+			csak közös munka folyik bizonyos emberekkel, és valamit szeretne módosítani akkor ne zavarodjon bele, tehát
+			fontos, hogy a programunk nyitott legyen a változásokra és ez már tovább megy akár a rendszer bővíthetőségig
+			amiről már a következő fejezetben beszélünk.
+		</p>
+			
+		<h3>9.4 Rendszer bővíthetősége</h3>
 
 		<p>
 			Mivel egy nyelvtanulós programról beszélünk, ezért fontos lehet, hogy több nyelv közül is lehessen
-			választani a későbbiekben, ami a felhasználó közönséget növeli. A rendszer felépítéséből adódóan
+			választani a későbbiekben, ami a felhasználói közönséget növeli. A rendszer felépítéséből adódóan
 			lehetőségünk lehet többféle választást kínálni a felhasználóknak a témák kapcsán, hogy milyen
 			témakörökben szeretnék erősíteni a tudásukat.
 		</p>
 		
-		<h3>9.2 Biztonsági funkciók</h3>
+		<h3>9.5 Biztonsági funkciók</h3>
 
 		<p>
 			A felhasználóknak biztosítunk egy bejelentkezési lehetőséget, jelszóval ellátva
