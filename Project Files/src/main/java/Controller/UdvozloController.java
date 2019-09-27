@@ -21,7 +21,7 @@ public class UdvozloController {
 
 
     public void handleLogInButtonClicked() throws Exception{
-        newPassStage.close();
+        
         Parent nxtWindow = FXMLLoader.load(getClass().getResource("/fxml/Nyelvvalasztas.fxml"));
         chooseStage = new Stage();
         chooseStage.setTitle("Választható nyelvek");
