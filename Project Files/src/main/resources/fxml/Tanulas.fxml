@@ -5,8 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TanulasController">
    <children>
       <Pane prefHeight="400.0" prefWidth="600.0">
          <children>
@@ -25,7 +24,7 @@
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button layoutX="252.0" layoutY="291.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="95.0" text="Teszt" textAlignment="CENTER">
+            <Button layoutX="252.0" layoutY="291.0" mnemonicParsing="false" onAction="#handleTestButtonClicked" prefHeight="28.0" prefWidth="95.0" text="Teszt" textAlignment="CENTER" visible="true">
                <font>
                   <Font size="15.0" />
                </font>
