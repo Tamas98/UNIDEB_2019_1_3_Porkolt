@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 public class UdvozloController {
 
     Stage newPassStage, chooseStage;
-    public Button newPassButt, signIn;
+    public Button newPassButt, signIn, quitButt;
 
     public void handleNewPassButtonClicked() throws Exception{
         Parent newPassword = FXMLLoader.load(getClass().getResource("/fxml/Uj_jelszo.fxml"));
@@ -30,7 +30,8 @@ public class UdvozloController {
 
     }
 
-
-
+    public void quitButtClicked() throws Exception {
+        System.exit(0);
+    }
 
 }
