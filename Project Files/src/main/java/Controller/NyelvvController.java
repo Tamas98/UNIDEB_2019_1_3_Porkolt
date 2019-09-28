@@ -14,7 +14,7 @@ public class NyelvvController {
     public void handleFlagImageClicked() throws Exception{
         Parent learn = FXMLLoader.load(getClass().getResource("/fxml/Tanulas.fxml"));
         learnStage = new Stage();
-        learnStage.setTitle("Új jelszó");
+        learnStage.setTitle("Tanulás");
         learnStage.setScene(new Scene(learn, 600, 400));
         learnStage.show();
     }

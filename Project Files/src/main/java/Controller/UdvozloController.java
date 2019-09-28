@@ -4,12 +4,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class UdvozloController {
 
     Stage newPassStage, chooseStage;
     public Button newPassButt, signIn, quitButt;
+    public AnchorPane udvPane;
 
     public void handleNewPassButtonClicked() throws Exception{
         Parent newPassword = FXMLLoader.load(getClass().getResource("/fxml/Uj_jelszo.fxml"));
@@ -27,7 +29,7 @@ public class UdvozloController {
         chooseStage.setTitle("Választható nyelvek");
         chooseStage.setScene(new Scene(nxtWindow, 600, 400));
         chooseStage.show();
-
+        udvPane.setVisible(false);
     }
 
     public void quitButtClicked() throws Exception {

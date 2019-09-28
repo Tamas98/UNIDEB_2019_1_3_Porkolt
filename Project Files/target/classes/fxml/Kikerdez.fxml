@@ -7,19 +7,22 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.KikerdezController">
    <children>
-      <Pane prefHeight="400.0" prefWidth="600.0">
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;">
          <children>
-            <Text layoutX="130.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kiválasztott nyelv - Kikérdezés">
+            <Text layoutX="130.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kiválasztott nyelv - Kikérdezés">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
             </Text>
-            <Text layoutX="157.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Választott nyelvű szó - magyar megfelelője">
+            <Text layoutX="157.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Választott nyelvű szó - magyar megfelelője">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Text>
-            <TextField layoutX="172.0" layoutY="191.0" prefHeight="27.0" prefWidth="154.0" />
+            <TextField layoutX="171.0" layoutY="190.0" prefHeight="27.0" prefWidth="154.0" text="Peach">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></TextField>
             <Text layoutX="341.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
                <font>
                   <Font name="Arial" size="25.0" />
@@ -30,17 +33,17 @@
                   <Font name="Arial" size="20.0" />
                </font>
             </Text>
-            <Text layoutX="190.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Helytelen válasz esetén itt jelenik meg a helyes válasz" textAlignment="CENTER" wrappingWidth="242.564453125">
+            <Text layoutX="189.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Helytelen válasz esetén itt jelenik meg a helyes válasz" textAlignment="CENTER" wrappingWidth="242.564453125">
                <font>
-                  <Font size="12.0" />
+                  <Font name="Arial" size="12.0" />
                </font>
             </Text>
-            <Button layoutX="287.0" layoutY="318.0" mnemonicParsing="false" text="Oké">
+            <Button layoutX="287.0" layoutY="318.0" mnemonicParsing="false" style="-fx-background-color: #696969;" text="Oké" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Button>
-            <Button id="quitButt" fx:id="quitButt" layoutX="275.0" layoutY="359.0" mnemonicParsing="false" onAction="#quitButtClicked" prefHeight="27.0" prefWidth="72.0" text="Kilépés">
+            <Button id="quitButt" fx:id="quitButt" layoutX="275.0" layoutY="359.0" mnemonicParsing="false" onAction="#quitButtClicked" prefHeight="27.0" prefWidth="72.0" style="-fx-background-color: #696969;" text="Kilépés" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>

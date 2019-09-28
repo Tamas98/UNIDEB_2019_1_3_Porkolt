@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #a3c2c2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NyelvvController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NyelvvController">
    <children>
        <Pane layoutX="25.0" layoutY="14.0">
       <children>
@@ -30,7 +30,7 @@
          </ImageView>
       </children>
        </Pane>
-      <Button id="quitButt" fx:id="quitButt" layoutX="265.0" layoutY="359.0" mnemonicParsing="false" onAction="#quitButtClicked" text="Kilépés">
+      <Button id="quitButt" fx:id="quitButt" layoutX="265.0" layoutY="359.0" mnemonicParsing="false" onAction="#quitButtClicked" style="-fx-background-color: #696969;" text="Kilépés" textFill="WHITE">
          <font>
             <Font name="Arial" size="15.0" />
          </font>
