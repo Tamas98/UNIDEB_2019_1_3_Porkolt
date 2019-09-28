@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #a3c2c2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NyelvvController">
+   <children>
+       <Pane layoutX="25.0" layoutY="14.0">
+      <children>
+          <Text layoutX="153.0" layoutY="45.0" text="Válassz nyelvet!">
+               <font>
+                  <Font name="Arial" size="34.0" />
+               </font>
+            </Text>
+         <ImageView id="englishFlag" fx:id="englishFlag" fitHeight="150.0" fitWidth="200.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true"
+                    onMousePressed="#handleFlagImageClicked">
+            <image>
+               <Image url="@../Pictures/English.png"  />
+            </image>
+         </ImageView>
+         <ImageView id="englishFlag" fx:id="frenchFlag" fitHeight="116.0" fitWidth="200.0" layoutX="351.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true"
+                    onMousePressed="#handleFlagImageClicked">
+            <image>
+               <Image url="@../Pictures/French.png" />
+            </image>
+         </ImageView>
+      </children>
+       </Pane>
+   </children>
+</AnchorPane>
