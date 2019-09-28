@@ -24,17 +24,21 @@
                   <Font name="Arial" size="12.0" />
                </font>
             </TextField>
-            <Button id="signIn" fx:id="signIn" layoutX="241.0" layoutY="238.0" mnemonicParsing="false" onAction="#handleLogInButtonClicked" prefHeight="40.0" prefWidth="118.0" style="-fx-background-color: #696969;" text="Bejelentkezés" textFill="WHITE">
+            <Button id="signIn" fx:id="signIn" layoutX="241.0" layoutY="238.0" mnemonicParsing="false"
+                    onAction="#handleLogInButtonClicked" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor"
+                    prefHeight="40.0" prefWidth="118.0" style="-fx-background-color: #696969;" text="Bejelentkezés" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Button>
-            <Button id="newPassButt" fx:id="newPassButt" alignment="CENTER" layoutX="262.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleNewPassButtonClicked" style="-fx-background-color: #696969;" text="Új jelszó" textFill="WHITE" visible="true">
+            <Button id="newPassButt" fx:id="newPassButt" alignment="CENTER" layoutX="262.0" layoutY="359.0" mnemonicParsing="false"
+                    onAction="#handleNewPassButtonClicked" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" style="-fx-background-color: #696969;" text="Új jelszó" textFill="WHITE" visible="true">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Button>
-            <Button id="quitButt" fx:id="quitButt" layoutX="509.0" layoutY="359.0" mnemonicParsing="false" onAction="#quitButtClicked" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: #696969;" text="Kilépés" textFill="WHITE">
+            <Button id="quitButt" fx:id="quitButt" layoutX="509.0" layoutY="359.0" mnemonicParsing="false"
+                    onAction="#quitButtClicked" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: #696969;" text="Kilépés" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>

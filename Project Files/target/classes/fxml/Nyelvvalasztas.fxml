@@ -30,7 +30,8 @@
          </ImageView>
       </children>
        </Pane>
-      <Button id="quitButt" fx:id="quitButt" layoutX="265.0" layoutY="359.0" mnemonicParsing="false" onAction="#quitButtClicked" style="-fx-background-color: #696969;" text="Kilépés" textFill="WHITE">
+      <Button id="quitButt" fx:id="quitButt" layoutX="265.0" layoutY="359.0" mnemonicParsing="false" onAction="#quitButtClicked" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor"
+              style="-fx-background-color: #696969;" text="Kilépés" textFill="WHITE">
          <font>
             <Font name="Arial" size="15.0" />
          </font>

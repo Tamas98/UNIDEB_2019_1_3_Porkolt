@@ -23,5 +23,15 @@ public class Uj_jelszoController {
 
     }
 
+    public void changeButtonColor() {
+        if (changeButt.isHover()) {
+            changeButt.setStyle("-fx-background-color: #b9865d");
+        }
+
+    }
+
+    public void changeBackColor() {
+            changeButt.setStyle("-fx-background-color: #696969");
+        }
 
 }

@@ -38,12 +38,12 @@
                   <Font name="Arial" size="12.0" />
                </font>
             </Text>
-            <Button layoutX="287.0" layoutY="318.0" mnemonicParsing="false" style="-fx-background-color: #696969;" text="Oké" textFill="WHITE">
+            <Button id="nextButt" fx:id="nextButt" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" layoutX="254.0" layoutY="309.0" mnemonicParsing="false" style="-fx-background-color: #696969;" text="Következő" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Button>
-            <Button id="quitButt" fx:id="quitButt" layoutX="275.0" layoutY="359.0" mnemonicParsing="false" onAction="#quitButtClicked" prefHeight="27.0" prefWidth="72.0" style="-fx-background-color: #696969;" text="Kilépés" textFill="WHITE">
+            <Button id="quitButt" fx:id="quitButt" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" layoutX="263.0" layoutY="359.0" mnemonicParsing="false" onAction="#quitButtClicked" prefHeight="27.0" prefWidth="72.0" style="-fx-background-color: #696969;" text="Kilépés" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>

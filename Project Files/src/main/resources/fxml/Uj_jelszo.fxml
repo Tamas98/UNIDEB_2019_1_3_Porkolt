@@ -22,7 +22,8 @@
                <font>
                   <Font name="Arial" size="13.0" />
                </font></TextField>
-            <Button id="changeButt" fx:id="changeButt" alignment="CENTER" contentDisplay="CENTER" layoutX="278.0" layoutY="128.0" mnemonicParsing="false" onAction="#handleChangeButtonClicked" style="-fx-background-color: #696969;" text="OK" textFill="WHITE">
+            <Button id="changeButt" fx:id="changeButt" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor"
+                    alignment="CENTER" contentDisplay="CENTER" layoutX="278.0" layoutY="128.0" mnemonicParsing="false" onAction="#handleChangeButtonClicked" style="-fx-background-color: #696969;" text="OK" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font></Button>

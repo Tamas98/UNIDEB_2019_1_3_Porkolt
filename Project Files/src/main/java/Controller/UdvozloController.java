@@ -16,7 +16,7 @@ public class UdvozloController {
     public void handleNewPassButtonClicked() throws Exception{
         Parent newPassword = FXMLLoader.load(getClass().getResource("/fxml/Uj_jelszo.fxml"));
         newPassStage = new Stage();
-        newPassStage.setTitle("Új jelszó");
+        newPassStage.setTitle("Kezdőképernyő");
         newPassStage.setScene(new Scene(newPassword, 600, 200));
         newPassStage.show();
     }
@@ -30,6 +30,22 @@ public class UdvozloController {
         chooseStage.setScene(new Scene(nxtWindow, 600, 400));
         chooseStage.show();
         udvPane.setVisible(false);
+    }
+
+    public void changeButtonColor(){
+        if (signIn.isHover()){
+            signIn.setStyle("-fx-background-color: #b9865d");
+        }else if (quitButt.isHover()){
+            quitButt.setStyle("-fx-background-color: #b9865d");
+        }else{
+            newPassButt.setStyle("-fx-background-color: #b9865d");
+        }
+    }
+
+    public void changeBackColor(){
+        signIn.setStyle("-fx-background-color: #696969");
+        quitButt.setStyle("-fx-background-color: #696969");
+        newPassButt.setStyle("-fx-background-color: #696969");
     }
 
     public void quitButtClicked() throws Exception {
