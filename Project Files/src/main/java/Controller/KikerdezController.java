@@ -1,19 +1,23 @@
 package Controller;
 
 import Controll.Kikerdez.TestPhase;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
 import com.google.gson.reflect.TypeToken;
 import Controll.fileHandler.JsonReader;
 import Controll.fileHandler.ReadFile;
-import java.awt.*;
-import java.io.FileReader;
+import javafx.scene.control.TextField;
+
 import java.lang.reflect.Type;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.Map;
+import java.util.Random;
 import java.util.ResourceBundle;
+import java.util.stream.Collectors;
+
+import Controll.Learning.LearningMethod;
 
 public class KikerdezController extends TestPhase implements Initializable {
 
@@ -21,7 +25,11 @@ public class KikerdezController extends TestPhase implements Initializable {
 
     private ReadFile jsonReader = new JsonReader("/Assets/exercises.json",token);
 
+    @FXML
     public Button nextButt,quitButt;
+
+    @FXML
+    public TextField askedOne,anotherOne;
 
     public void changeButtonColor() {
         if (nextButt.isHover()) {
@@ -40,10 +48,21 @@ public class KikerdezController extends TestPhase implements Initializable {
         System.exit(0);
     }
 
+    @FXML
+    public void checkAnsw(){
+        checkAnswer(askedOne.getText(),anotherOne.getText());
+    }
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        Random random = new Random();
+       // String starter = LearningMethod.FinalMap.keySet().stream().collect(Collectors.toList()).get(random.nextInt(10));
+
+       // anotherOne.setText(starter);
 
     }
+
+
 
 }

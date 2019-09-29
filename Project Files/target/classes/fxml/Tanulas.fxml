@@ -15,12 +15,22 @@
                   <Font name="Arial" size="25.0" />
                </font>
             </Text>
-            <Text layoutX="173.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Idegen nyelvű szó - Magyar megfelelő" textAlignment="CENTER">
+            <Text fx:id="key" layoutX="173.0" layoutY="144.0" strokeType="OUTSIDE" style="-fx-padding: 20%" strokeWidth="0.0" text="Idegen nyelvű szó" textAlignment="CENTER">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Text>
-            <Button id="prevButt" fx:id="prevButt" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" layoutX="94.0" layoutY="306.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="95.0" style="-fx-background-color: #696969;" text="Előző" textAlignment="CENTER" textFill="WHITE">
+            <Text layoutX="173.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-padding: 20%" text="-" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="value" layoutX="173.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-padding: 20%" text="Magyar megfelelő" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <Button id="prevButt" fx:id="prevButt" onAction="#prevWord" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" layoutX="94.0" layoutY="306.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="95.0" style="-fx-background-color: #696969;" text="Előző" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -30,7 +40,7 @@
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button id="nextButt" fx:id="nextButt" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" layoutX="410.0" layoutY="306.0" mnemonicParsing="false" style="-fx-background-color: #696969;" text="Következő" textAlignment="CENTER" textFill="WHITE">
+            <Button id="nextButt" fx:id="nextButt" onAction="#nextWord" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" layoutX="410.0" layoutY="306.0" mnemonicParsing="false" style="-fx-background-color: #696969;" text="Következő" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
