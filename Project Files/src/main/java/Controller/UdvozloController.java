@@ -9,8 +9,8 @@ import javafx.stage.Stage;
 
 public class UdvozloController {
 
-    Stage newPassStage, chooseStage;
-    public Button newPassButt, signIn, quitButt;
+    Stage newPassStage, chooseStage, regStage;
+    public Button newPassButt, signIn, quitButt, regButt;
     public AnchorPane udvPane;
 
     public void handleNewPassButtonClicked() throws Exception{
@@ -50,6 +50,14 @@ public class UdvozloController {
 
     public void quitButtClicked() throws Exception {
         System.exit(0);
+    }
+
+    public void regButtClicked() throws Exception {
+        Parent regIster = FXMLLoader.load(getClass().getResource("/fxml/Regisztracio.fxml"));
+        regStage = new Stage();
+        regStage.setTitle("Regisztráció");
+        regStage.setScene(new Scene(regIster, 600, 200));
+        regStage.show();
     }
 
 }
