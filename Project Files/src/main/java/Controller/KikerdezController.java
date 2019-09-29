@@ -1,8 +1,25 @@
 package Controller;
 
+import Controll.Kikerdez.TestPhase;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
-public class KikerdezController {
+import com.google.gson.reflect.TypeToken;
+import Controll.fileHandler.JsonReader;
+import Controll.fileHandler.ReadFile;
+import java.awt.*;
+import java.io.FileReader;
+import java.lang.reflect.Type;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.ResourceBundle;
+
+public class KikerdezController extends TestPhase implements Initializable {
+
+    private Type token = new TypeToken<Map<String, String>>(){}.getType();
+
+    private ReadFile jsonReader = new JsonReader("/Assets/exercises.json",token);
 
     public Button nextButt,quitButt;
 
@@ -24,5 +41,9 @@ public class KikerdezController {
     }
 
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+    }
 
 }

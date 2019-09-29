@@ -1,12 +1,28 @@
 package Controller;
 
+import Controll.fileHandler.JsonReader;
+import Controll.fileHandler.ReadFile;
+import com.google.gson.reflect.TypeToken;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class TanulasController {
+import java.lang.reflect.Type;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.ResourceBundle;
+
+public class TanulasController implements Initializable {
+
+        public static Map<String,String> language = new HashMap<String,String>();
+
+        private Type token = new TypeToken<Map<String, String>>(){}.getType();
+
+        private ReadFile jsonReader = new JsonReader("/Assets/exercises.json",token);
 
         Stage testStage;
         public Button prevButt,testButt,nextButt,quitButt;
@@ -40,6 +56,14 @@ public class TanulasController {
 
     public void quitButtClicked() throws Exception {
         System.exit(0);
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        language = jsonReader.readFromJson(language);
+
+        if(language == null)
+            language = new HashMap<String,String>();
     }
 
 }
