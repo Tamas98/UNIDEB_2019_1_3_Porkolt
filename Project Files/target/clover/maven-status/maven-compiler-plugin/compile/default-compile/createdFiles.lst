@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Controller/UdvozloController$__CLR4_3_14j4jk15c8ce8$1.class
 Controll/fileHandler/JsonWriter$__CLR4_3_12929k15c8c87.class
 Controller/TanulasController$__CLR4_3_13m3mk15c8cdk$1.class
@@ -45,3 +46,39 @@ Controll/Bejelentkezes/LoginPlease$__CLR4_3_100k15c8c6u$1.class
 Controller/KikerdezController$1.class
 Controll/Kikerdez/TestPhase$__CLR4_3_1cck15c8c7g.class
 MainApplication$__CLR4_3_15x5xk15c8cev$1.class
+=======
+Controller/NyelvvController$__CLR4_3_12f2fk1502yg6$1.class
+Controll/TestPhase$__CLR4_3_1cck13c8ul1$1.class
+MainApplication$__CLR4_3_11z1zk14yamzg.class
+Controller/EredmenyController$__CLR4_3_11n1nk14yamyp$1.class
+Controller/EredmenyController$__CLR4_3_11n1nk14yamyp.class
+Controller/TanulasController.class
+Controll/Test.class
+Controll/LoginHandler.class
+Controller/KikerdezController$__CLR4_3_12424k1502ybe.class
+Controller/UdvozloController$__CLR4_3_13i3ik1502ynh.class
+Controller/KikerdezController$__CLR4_3_12424k1502ybe$1.class
+Controller/NyelvvController.class
+MainApplication.class
+Controll/LoginHandler$__CLR4_3_100k13c8ugc$1.class
+Controll/LoginHandler$__CLR4_3_100k13c8ugc.class
+Main.class
+Controller/NyelvvController$__CLR4_3_12f2fk1502yg6.class
+MainApplication$__CLR4_3_11z1zk14yamzg$1.class
+Controller/Uj_jelszoController$__CLR4_3_14h4hk1502yog$1.class
+Controller/KikerdezController.class
+Controller/EredmenyController.class
+Main$__CLR4_3_11x1xk14wumxh$1.class
+Modell/Language.class
+Controller/UdvozloController.class
+Controller/TanulasController$__CLR4_3_12r2rk1502ym3$1.class
+Controller/Uj_jelszoController$__CLR4_3_14h4hk1502yog.class
+Modell/User.class
+Controll/TestPhase.class
+Controller/TanulasController$__CLR4_3_12r2rk1502ym3.class
+Controller/UdvozloController$__CLR4_3_13i3ik1502ynh$1.class
+Controll/Login.class
+Main$__CLR4_3_11x1xk14wumxh.class
+Controller/Uj_jelszoController.class
+Controll/TestPhase$__CLR4_3_1cck13c8ul1.class
+>>>>>>> a27555872e8917161a7ac30b52a7f8fbf47ac828
