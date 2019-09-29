@@ -19,6 +19,14 @@ public class LoginPlease implements Login {
     public String hasher(String passwd) {
         return hash1+ caesarCoder(passwd) + hash2;
     }
+	
+	public boolean rightPassword(String passwd, String savedPasswd) {
+		if(passwd.equals(hasher(savedPasswd))) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 
     private String caesarCoder(String passwd) {
         return "Hy";
