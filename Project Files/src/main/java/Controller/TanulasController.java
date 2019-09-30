@@ -116,12 +116,12 @@ public class TanulasController extends LearningMethod implements Initializable {
 
         get10Random(language);
 
-        key.setText(fixKeys.get(0));
-        value.setText(FinalMap.get(fixKeys.get(0)));
+        //key.setText(fixKeys.get(0));
+        //value.setText(FinalMap.get(fixKeys.get(0)));
 
-        prevButt.setDisable(true);
-        testButt.setDisable(true);
-        counter=0;
+        //prevButt.setDisable(true);
+        //testButt.setDisable(true);
+        //counter=0;
 
 
     }

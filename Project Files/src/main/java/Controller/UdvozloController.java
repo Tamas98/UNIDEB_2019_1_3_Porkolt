@@ -5,13 +5,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class UdvozloController {
 
-    Stage newPassStage, chooseStage, regStage;
+    Stage newPassStage, regStage, learnStage;
     public Button newPassButt, signIn, quitButt, regButt;
     public AnchorPane udvPane;
+    public Pane langPane, signPane;
 
     public void handleNewPassButtonClicked() throws Exception{
         Parent newPassword = FXMLLoader.load(getClass().getResource("/fxml/Uj_jelszo.fxml"));
@@ -22,14 +24,17 @@ public class UdvozloController {
         udvPane.setOpacity(0.1);
     }
 
-
     public void handleLogInButtonClicked() throws Exception{
-        
-        Parent nxtWindow = FXMLLoader.load(getClass().getResource("/fxml/Nyelvvalasztas.fxml"));
-        chooseStage = new Stage();
-        chooseStage.setTitle("Választható nyelvek");
-        chooseStage.setScene(new Scene(nxtWindow, 600, 400));
-        chooseStage.show();
+        signIn.setVisible(false);
+        langPane.setVisible(true);
+    }
+
+    public void handleFlagImageClicked() throws Exception{
+        Parent learn = FXMLLoader.load(getClass().getResource("/fxml/Tanulas.fxml"));
+        learnStage = new Stage();
+        learnStage.setTitle("Nyelvválasztás");
+        learnStage.setScene(new Scene(learn, 600, 400));
+        learnStage.show();
     }
 
     public void changeButtonColor(){
