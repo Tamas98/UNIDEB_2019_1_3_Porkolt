@@ -51,6 +51,10 @@ public class UdvozloController extends LoginPhase implements Initializable {
     @FXML
     public PasswordField passWord;
 
+    /**
+     * Új jelszó gomb
+     * @throws Exception
+     */
     public void handleNewPassButtonClicked() throws Exception{
         Parent newPassword = FXMLLoader.load(getClass().getResource("/fxml/Uj_jelszo.fxml"));
 
@@ -62,6 +66,10 @@ public class UdvozloController extends LoginPhase implements Initializable {
 
     }
 
+    /**
+     * Bejelentkezés gomb
+     * @throws Exception
+     */
     public void handleLogInButtonClicked() throws Exception{
 
         String user = "";
@@ -77,6 +85,10 @@ public class UdvozloController extends LoginPhase implements Initializable {
         }
     }
 
+    /**
+     * Nyelválasztásnál a zászlóra kattintás
+     * @throws Exception
+     */
     public void handleFlagImageClicked() throws Exception{
         Parent learn = FXMLLoader.load(getClass().getResource("/fxml/Tanulas.fxml"));
         learnStage = new Stage();
@@ -86,6 +98,9 @@ public class UdvozloController extends LoginPhase implements Initializable {
 
     }
 
+    /**
+     * Gombok színeinek megváltoztazása
+     */
     public void changeButtonColor(){
         if (signIn.isHover()){
             signIn.setStyle("-fx-background-color: #b9865d");
@@ -105,10 +120,18 @@ public class UdvozloController extends LoginPhase implements Initializable {
         regButt.setStyle("-fx-background-color: #696969");
     }
 
+    /**
+     * Kilépés gomb
+     * @throws Exception
+     */
     public void quitButtClicked() throws Exception {
         System.exit(0);
     }
 
+    /**
+     * Regisztráció gomb
+     * @throws Exception
+     */
     public void regButtClicked() throws Exception {
         Parent regIster = FXMLLoader.load(getClass().getResource("/fxml/Regisztracio.fxml"));
         regStage = new Stage();
