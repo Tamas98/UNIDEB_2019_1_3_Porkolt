@@ -20,7 +20,11 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+<<<<<<< HEAD
 import javafx.scene.layout.VBox;
+=======
+import javafx.scene.layout.Pane;
+>>>>>>> 9a6c5fc7751b159884991506616a52fa8803c4f6
 import javafx.stage.Stage;
 
 import java.lang.reflect.Type;
@@ -39,9 +43,10 @@ public class UdvozloController extends LoginPhase implements Initializable {
     //private Map<String,Map<String,String>> users = new HashMap<>();
     public static Map<String,User> users = new HashMap<>();
 
-    Stage newPassStage, chooseStage, regStage;
+    Stage newPassStage, regStage, learnStage;
     public Button newPassButt, signIn, quitButt, regButt;
     public AnchorPane udvPane;
+    public Pane langPane, signPane;
 
     @FXML
     public TextField userName;
@@ -51,14 +56,22 @@ public class UdvozloController extends LoginPhase implements Initializable {
 
     public void handleNewPassButtonClicked() throws Exception{
         Parent newPassword = FXMLLoader.load(getClass().getResource("/fxml/Uj_jelszo.fxml"));
+<<<<<<< HEAD
         chooseStage = new Stage();
         chooseStage.setTitle("Kezdőképernyő");
         chooseStage.setScene(new Scene(newPassword, 600, 200));
         chooseStage.show();
+=======
+        newPassStage = new Stage();
+        newPassStage.setTitle("Kezdőképernyő");
+        newPassStage.setScene(new Scene(newPassword, 600, 200));
+        newPassStage.show();
+        udvPane.setOpacity(0.1);
+>>>>>>> 9a6c5fc7751b159884991506616a52fa8803c4f6
     }
 
-
     public void handleLogInButtonClicked() throws Exception{
+<<<<<<< HEAD
 
         String user = "";
 
@@ -75,6 +88,18 @@ public class UdvozloController extends LoginPhase implements Initializable {
         }catch(Exception e) {
             popBox("Helytelen felhaználónév,\n jelszó kombináció", "Hiba");
         }
+=======
+        signIn.setVisible(false);
+        langPane.setVisible(true);
+    }
+
+    public void handleFlagImageClicked() throws Exception{
+        Parent learn = FXMLLoader.load(getClass().getResource("/fxml/Tanulas.fxml"));
+        learnStage = new Stage();
+        learnStage.setTitle("Nyelvválasztás");
+        learnStage.setScene(new Scene(learn, 600, 400));
+        learnStage.show();
+>>>>>>> 9a6c5fc7751b159884991506616a52fa8803c4f6
     }
 
     public void changeButtonColor(){
@@ -106,6 +131,7 @@ public class UdvozloController extends LoginPhase implements Initializable {
         regStage.setTitle("Regisztráció");
         regStage.setScene(new Scene(regIster, 600, 200));
         regStage.show();
+        udvPane.setOpacity(0.1);
     }
 
     @Override

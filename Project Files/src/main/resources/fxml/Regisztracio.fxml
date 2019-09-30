@@ -18,7 +18,11 @@
                   <Font name="Arial" size="20.0" />
                </font>
             </Text>
+<<<<<<< HEAD
             <PasswordField fx:id="passwd" alignment="CENTER" layoutX="218.0" layoutY="100.0" prefHeight="23.0" prefWidth="163.0" promptText="Jelszó">
+=======
+            <TextField alignment="TOP_LEFT" layoutX="218.0" layoutY="100.0" prefHeight="23.0" prefWidth="163.0" promptText="Add meg az új jelszót" text="Jelszó">
+>>>>>>> 9a6c5fc7751b159884991506616a52fa8803c4f6
                <font>
                   <Font name="Arial" size="13.0" />
                </font>
@@ -27,7 +31,11 @@
                <font>
                   <Font name="Arial" size="15.0" />
                </font></Button>
+<<<<<<< HEAD
             <TextField fx:id="uname" alignment="CENTER" layoutX="218.0" layoutY="68.0" promptText="Felhasználónév">
+=======
+            <TextField alignment="TOP_LEFT" layoutX="218.0" layoutY="68.0" text="Felhasználónév">
+>>>>>>> 9a6c5fc7751b159884991506616a52fa8803c4f6
                <font>
                   <Font name="Arial" size="13.0" />
                </font>
