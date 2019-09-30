@@ -60,7 +60,7 @@ public class TestPhase implements Test {
 
     private void setOnShit(String key,String value, Text toSet){
         if(checkCorrect(key,value)){
-            toSet.setText("Helyes Választ");
+            toSet.setText("Helyes válasz");
         }else{
             if(allWord.containsKey(key))
                 toSet.setText("Helytelen válasz, helyes válasz: \n" + key + " - " + allWord.get(key));
