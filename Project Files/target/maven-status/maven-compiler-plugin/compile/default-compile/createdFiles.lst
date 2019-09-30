@@ -1,11 +1,11 @@
 Controll/Learning/Learn.class
-MainApplication.class
 Controller/NyelvvController.class
+MainApplication.class
 Controll/Languages/French.class
 Controll/fileHandler/WriteFile.class
-Modell/User$UserBuilder.class
 Controll/fileHandler/JsonWriter.class
 Controller/KikerdezController.class
+Modell/User$UserBuilder.class
 Controller/EredmenyController.class
 Modell/Language.class
 Controller/UdvozloController.class
