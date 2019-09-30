@@ -19,21 +19,21 @@
                   <Font name="Arial" size="15.0" />
                </font>
             </Text>
-            <TextField fx:id="askedOne" layoutX="171.0" layoutY="190.0" prefHeight="27.0" prefWidth="154.0" text="Peach">
+            <TextField fx:id="askedOne" layoutX="100.0" layoutY="190.0" prefHeight="27.0" prefWidth="154.0" text="Peach">
                <font>
                   <Font name="Arial" size="13.0" />
                </font></TextField>
-            <Text layoutX="341.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+            <Text layoutX="300" layoutY="210" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
             </Text>
-            <TextField fx:id="anotherOne" layoutX="370.0" layoutY="210.0" text="Barack">
+            <TextField fx:id="anotherOne" layoutX="300.0" layoutY="190" text="Barack">
                <font>
                   <Font name="Arial" size="20.0" />
                </font>
             </TextField>
-            <Text layoutX="189.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Helytelen válasz esetén itt jelenik meg a helyes válasz" textAlignment="CENTER" wrappingWidth="242.564453125">
+            <Text fx:id="helyes" layoutX="189.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Helytelen válasz esetén itt jelenik meg a helyes válasz" textAlignment="CENTER" wrappingWidth="242.564453125">
                <font>
                   <Font name="Arial" size="12.0" />
                </font>

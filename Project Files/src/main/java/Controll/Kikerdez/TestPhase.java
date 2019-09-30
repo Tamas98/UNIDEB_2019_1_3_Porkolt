@@ -1,9 +1,12 @@
 package Controll.Kikerdez;
 
+import Controller.KikerdezController;
 import Controller.TanulasController;
+import javafx.scene.text.Text;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class TestPhase implements Test {
 
@@ -18,42 +21,58 @@ public class TestPhase implements Test {
     }
 
     private boolean checkCorrect(String key, String value){
-
         if(allWord.containsKey(key.toLowerCase())){
-            return allWord.get(key.toLowerCase()) == value.toLowerCase();
+            return allWord.get(key.toLowerCase()).equals(value.toLowerCase());
         }else{
             return false;
         }
 
     }
 
-    public String checkAnswer(String key,String value){
-
-        checkAndAdd(key,value);
+    public void checkAnswer(String key,String value,Text helyes){
+        checkAndAdd(key,value,helyes);
 
         for(Map.Entry<String,Integer> entry: was.entrySet()){
             System.out.println("Key: " + entry.getKey() + "\nValue: " +entry.getValue() + "\n");
         }
 
-
-        return null;
-
+        System.out.println("-----------------------------------------------------------------------");
     }
 
-    private void checkAndAdd(String key,String value){
+    private void checkAndAdd(String key,String value,Text helyes){
 
         if(was.containsKey(key)){
 
-            Object o = (checkCorrect(key,value)) ? was.put(key,was.get(key)+1) : null;
+           if(checkCorrect(key,value)) {
+               was.put(key, was.get(key) + 1);
+               setOnShit(key,value,helyes);
+           }
 
-            o = (was.get(key) == 2) ? learned.put(key,value) : null;
+            if(was.get(key) == 2)
+                learned.put(key,allWord.get(key));
 
         }else{
-
-            Object o = (checkCorrect(key,value)) ? was.put(key,1) : was.put(key,0);
-
+            if(checkCorrect(key,value)) {
+                was.put(key, 1);
+                setOnShit(key,value,helyes);
+            }
+            else {
+                was.put(key, 0);
+                setOnShit(key,value, helyes);
+            }
         }
 
+    }
+
+    private void setOnShit(String key,String value, Text toSet){
+        if(checkCorrect(key,value)){
+            toSet.setText("Helyes Választ");
+        }else{
+            if(allWord.containsKey(key))
+                toSet.setText("Helytelen válasz, helyes válasz: \n" + key + " - " + allWord.get(key));
+            else
+                toSet.setText("Helytelen válasz, helyes válasz: \n" + allWord.keySet().stream().filter(k -> allWord.get(k).equals(value)).collect(Collectors.toList()).get(0) + " - " + value);
+        }
     }
 
 }

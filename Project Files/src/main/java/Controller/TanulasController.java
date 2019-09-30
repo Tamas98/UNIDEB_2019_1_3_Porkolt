@@ -95,8 +95,10 @@ public class TanulasController extends LearningMethod implements Initializable {
             setNextWord(key.getText(),key,value);
             counter += 1;
             prevButt.setDisable(false);
-        }else if(counter == fixKeys.size()-1)
+        }else if(counter == fixKeys.size()-1) {
             nextButt.setDisable(true);
+            testButt.setDisable(false);
+        }
     }
 
     @Override
@@ -118,6 +120,7 @@ public class TanulasController extends LearningMethod implements Initializable {
         value.setText(FinalMap.get(fixKeys.get(0)));
 
         prevButt.setDisable(true);
+        testButt.setDisable(true);
         counter=0;
 
 

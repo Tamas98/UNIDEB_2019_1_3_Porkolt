@@ -18,15 +18,21 @@ import java.util.ResourceBundle;
 import java.util.stream.Collectors;
 
 import Controll.Learning.LearningMethod;
+import javafx.scene.text.Text;
 
 public class KikerdezController extends TestPhase implements Initializable {
 
     private Type token = new TypeToken<Map<String, String>>(){}.getType();
 
-    private ReadFile jsonReader = new JsonReader("/Assets/exercises.json",token);
+    private ReadFile jsonReader = new JsonReader("/Assets/english.json",token);
+
+    private Random random = new Random();
 
     @FXML
     public Button nextButt,quitButt;
+
+    @FXML
+    public Text helyes;
 
     @FXML
     public TextField askedOne,anotherOne;
@@ -49,17 +55,39 @@ public class KikerdezController extends TestPhase implements Initializable {
     }
 
     @FXML
-    public void checkAnsw(){
-        checkAnswer(askedOne.getText(),anotherOne.getText());
+    public void checkAnsw() {
+        checkAnswer(anotherOne.getText(),askedOne.getText(),helyes);
+
+        anotherOne.setDisable(false);
+        askedOne.setDisable(false);
+
+        String nextKey = LearningMethod.fixKeys.get(random.nextInt(10));
+
+        if(random.nextInt(10) < 5){
+            anotherOne.setDisable(true);
+            anotherOne.setText(nextKey);
+            askedOne.setText("");
+        }else{
+            askedOne.setDisable(true);
+            askedOne.setText(LearningMethod.FinalMap.get(nextKey));
+            anotherOne.setText("");
+        }
+
+        if(TestPhase.learned.size() == 10){
+            //Gratuláló popup..vissza a kezdő oldalra.
+        }
     }
+
+
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        Random random = new Random();
-       // String starter = LearningMethod.FinalMap.keySet().stream().collect(Collectors.toList()).get(random.nextInt(10));
 
-       // anotherOne.setText(starter);
+       String starter = LearningMethod.FinalMap.keySet().stream().collect(Collectors.toList()).get(random.nextInt(10));
+
+       anotherOne.setText(starter);
+       anotherOne.setDisable(true);
 
     }
 
