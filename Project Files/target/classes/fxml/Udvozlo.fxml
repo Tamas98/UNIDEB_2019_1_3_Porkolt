@@ -44,7 +44,8 @@
                   <Font size="10.0" />
                </font>
             </Text>
-            <Button id="regButt" fx:id="regButt" layoutX="14.0" layoutY="359.0" mnemonicParsing="false" onAction="#regButtClicked" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #696969;" text="Regisztáció" textAlignment="CENTER" textFill="WHITE">
+            <Button id="regButt" fx:id="regButt" layoutX="14.0" layoutY="359.0" mnemonicParsing="false" onAction="#regButtClicked" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #696969;" text="Regisztáció" textAlignment="CENTER" textFill="WHITE"
+                     onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
