@@ -11,22 +11,21 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.KikerdezController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.KikerdezController">
    <children>
       <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;">
          <children>
-            <Text layoutX="130.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kiválasztott nyelv - Kikérdezés">
+            <Text layoutX="130.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kiválasztott nyelv - Kikérdezés">
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
             </Text>
-            <Text layoutX="157.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Választott nyelvű szó - magyar megfelelője">
+            <Text layoutX="157.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Választott nyelvű szó - magyar megfelelője">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Text>
-            <TextField fx:id="askedOne" layoutX="100.0" layoutY="190.0" prefHeight="27.0" prefWidth="154.0" text="Peach">
+            <TextField fx:id="askedOne" layoutX="70.0" layoutY="190.0" prefHeight="27.0" prefWidth="174.0" text="Peach">
                <font>
                   <Font size="14.0" />
                </font></TextField>
@@ -36,22 +35,22 @@
                   <Font name="Arial" size="25.0" />
                </font>
             </Text>
-            <TextField fx:id="anotherOne" layoutX="300.0" layoutY="190" text="Barack">
+            <TextField fx:id="anotherOne" layoutX="352.0" layoutY="190.0" text="Barack">
                <font>
                   <Font size="14.0" />
                </font>
             </TextField>
-            <Text fx:id="helyes" layoutX="189.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Helytelen válasz esetén itt jelenik meg a helyes válasz" textAlignment="CENTER" wrappingWidth="242.564453125">
+            <Text fx:id="helyes" layoutX="179.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Helytelen válasz esetén itt jelenik meg a helyes válasz" textAlignment="CENTER" wrappingWidth="242.564453125">
                <font>
                   <Font name="Arial" size="12.0" />
                </font>
             </Text>
-            <Button id="nextButt" fx:id="nextButt" layoutX="254.0" layoutY="309.0" mnemonicParsing="false" onAction="#checkAnsw" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" style="-fx-background-color: #696969;" text="Következő" textFill="WHITE">
+            <Button id="nextButt" fx:id="nextButt" layoutX="253.0" layoutY="321.0" mnemonicParsing="false" onAction="#checkAnsw" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" prefHeight="29.0" prefWidth="94.0" style="-fx-background-color: #696969;" text="Következő" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Button>
-            <Button id="quitButt" fx:id="quitButt" layoutX="263.0" layoutY="359.0" mnemonicParsing="false" onAction="#quitButtClicked" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" prefHeight="29.0" prefWidth="85.0" style="-fx-background-color: #696969;" text="Kilépés" textFill="WHITE">
+            <Button id="quitButt" fx:id="quitButt" layoutX="253.0" layoutY="357.0" mnemonicParsing="false" onAction="#quitButtClicked" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" prefHeight="29.0" prefWidth="94.0" style="-fx-background-color: #696969;" text="Kilépés" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
