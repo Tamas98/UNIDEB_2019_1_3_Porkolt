@@ -19,6 +19,7 @@ public class UdvozloController {
         newPassStage.setTitle("Kezdőképernyő");
         newPassStage.setScene(new Scene(newPassword, 600, 200));
         newPassStage.show();
+        udvPane.setOpacity(0.1);
     }
 
 
@@ -29,7 +30,6 @@ public class UdvozloController {
         chooseStage.setTitle("Választható nyelvek");
         chooseStage.setScene(new Scene(nxtWindow, 600, 400));
         chooseStage.show();
-        udvPane.setVisible(false);
     }
 
     public void changeButtonColor(){
@@ -61,6 +61,7 @@ public class UdvozloController {
         regStage.setTitle("Regisztráció");
         regStage.setScene(new Scene(regIster, 600, 200));
         regStage.show();
+        udvPane.setOpacity(0.1);
     }
 
 }
