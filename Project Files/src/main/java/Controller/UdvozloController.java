@@ -1,35 +1,80 @@
 package Controller;
 
+import Controll.Bejelentkezes.LoginPhase;
+import Controll.Languages.adminUser;
+import Controll.fileHandler.JsonReader;
+import Controll.fileHandler.ReadFile;
+import Modell.User;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.reflect.TypeToken;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class UdvozloController {
+import java.lang.reflect.Type;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.ResourceBundle;
+import java.util.stream.Collectors;
+
+public class UdvozloController extends LoginPhase implements Initializable {
+
+    //private Type token = new TypeToken<Map<String,Map<String,String>>>(){}.getType();
+    private Type token = new TypeToken<Map<String,User>>(){}.getType();
+    private ReadFile jsonReader = new JsonReader("/Assets/users.json",token);
+
+    //private Map<String,Map<String,String>> users = new HashMap<>();
+    public static Map<String,User> users = new HashMap<>();
 
     Stage newPassStage, chooseStage, regStage;
     public Button newPassButt, signIn, quitButt, regButt;
     public AnchorPane udvPane;
 
+    @FXML
+    public TextField userName;
+
+    @FXML
+    public PasswordField passWord;
+
     public void handleNewPassButtonClicked() throws Exception{
         Parent newPassword = FXMLLoader.load(getClass().getResource("/fxml/Uj_jelszo.fxml"));
-        newPassStage = new Stage();
-        newPassStage.setTitle("Kezdőképernyő");
-        newPassStage.setScene(new Scene(newPassword, 600, 200));
-        newPassStage.show();
+        chooseStage = new Stage();
+        chooseStage.setTitle("Kezdőképernyő");
+        chooseStage.setScene(new Scene(newPassword, 600, 200));
+        chooseStage.show();
     }
 
 
     public void handleLogInButtonClicked() throws Exception{
-        
-        Parent nxtWindow = FXMLLoader.load(getClass().getResource("/fxml/Nyelvvalasztas.fxml"));
-        chooseStage = new Stage();
-        chooseStage.setTitle("Választható nyelvek");
-        chooseStage.setScene(new Scene(nxtWindow, 600, 400));
-        chooseStage.show();
-        udvPane.setVisible(false);
+
+        String user = "";
+
+        try{
+            user = users.keySet().stream().filter(u -> u.equals("admin")? u.equals(passWord.getText()):u.equals(hasher(passWord.getText()))).collect(Collectors.toList()).get(0);
+            if(users.get(user).getUsername().equals(userName.getText())){
+                Parent nxtWindow = FXMLLoader.load(getClass().getResource("/fxml/Nyelvvalasztas.fxml"));
+                Stage langStage = new Stage();
+                langStage.setTitle("Választható nyelvek");
+                langStage.setScene(new Scene(nxtWindow, 600, 400));
+                langStage.show();
+                udvPane.setVisible(false);
+            }
+        }catch(Exception e) {
+            popBox("Helytelen felhaználónév,\n jelszó kombináció", "Hiba");
+        }
     }
 
     public void changeButtonColor(){
@@ -63,4 +108,45 @@ public class UdvozloController {
         regStage.show();
     }
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        users = jsonReader.readFromJson(users);
+
+        if(users == null) {
+            ObjectMapper object = new ObjectMapper();
+            try {
+                users = object.readValue(adminUser.setupAdmin(), Map.class);
+            } catch (JsonProcessingException e) {
+                e.printStackTrace();
+            }
+        }
+
+
+        System.out.println(users);
+    }
+
+    public static void popBox(String message,String title){
+        Stage stage = new Stage();
+        stage.setTitle(title);
+
+        Label label = new Label(message);
+        label.setId("label");
+
+        Button okButton = new Button("OK");
+        okButton.setOnAction(e -> stage.close());
+        okButton.setId("button");
+
+        VBox layout = new VBox(label,okButton);
+        layout.setAlignment(Pos.CENTER);
+        layout.setSpacing(10);
+        layout.setPadding(new Insets(10,10,10,10));
+
+        Scene scene = new Scene(layout,200,150);
+
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.showAndWait();
+
+       // log.info("Successfully popped a box with message: " + message);
+    }
 }

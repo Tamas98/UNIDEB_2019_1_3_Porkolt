@@ -14,16 +14,16 @@
                   <Font name="Arial" size="25.0" />
                </font>
             </Text>
-            <TextField id="userName" fx:id="userName" layoutX="218.0" layoutY="152.0" prefHeight="30.0" prefWidth="165.0" text="Felhasználónév">
+            <TextField id="userName" fx:id="userName" layoutX="218.0" layoutY="152.0" prefHeight="30.0" prefWidth="165.0" promptText="Felhasználónév">
                <font>
                   <Font name="Arial" size="12.0" />
                </font>
             </TextField>
-            <TextField id="passWord" fx:id="passWord" layoutX="218.0" layoutY="191.0" prefHeight="30.0" prefWidth="165.0" text="Jelszó">
+            <PasswordField id="passWord" fx:id="passWord" layoutX="218.0" layoutY="191.0" prefHeight="30.0" prefWidth="165.0" promptText="Jelszó">
                <font>
                   <Font name="Arial" size="12.0" />
                </font>
-            </TextField>
+            </PasswordField>
             <Button id="signIn" fx:id="signIn" layoutX="241.0" layoutY="238.0" mnemonicParsing="false" onAction="#handleLogInButtonClicked" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" prefHeight="40.0" prefWidth="118.0" style="-fx-background-color: #696969;" text="Bejelentkezés" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />

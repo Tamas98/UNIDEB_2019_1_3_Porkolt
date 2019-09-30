@@ -18,15 +18,16 @@
                   <Font name="Arial" size="20.0" />
                </font>
             </Text>
-            <TextField alignment="CENTER" layoutX="218.0" layoutY="100.0" prefHeight="23.0" prefWidth="163.0" promptText="Add meg az új jelszót" text="Jelszó">
+            <PasswordField fx:id="passwd" alignment="CENTER" layoutX="218.0" layoutY="100.0" prefHeight="23.0" prefWidth="163.0" promptText="Jelszó">
                <font>
                   <Font name="Arial" size="13.0" />
-               </font></TextField>
+               </font>
+            </PasswordField>
             <Button id="okButt" fx:id="okButt" alignment="CENTER" contentDisplay="CENTER" layoutX="277.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleChangeButtonClicked" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" style="-fx-background-color: #696969;" text="OK" textFill="WHITE">
                <font>
                   <Font name="Arial" size="15.0" />
                </font></Button>
-            <TextField alignment="CENTER" layoutX="218.0" layoutY="68.0" text="Felhasználónév">
+            <TextField fx:id="uname" alignment="CENTER" layoutX="218.0" layoutY="68.0" promptText="Felhasználónév">
                <font>
                   <Font name="Arial" size="13.0" />
                </font>

@@ -25,20 +25,20 @@
                <font>
                   <Font size="14.0" />
                </font></TextField>
-<<<<<<< HEAD
+<!--<<<<<<< HEAD-->
             <Text layoutX="300" layoutY="210" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
-=======
+<!--=======
             <Text layoutX="300.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
->>>>>>> 8be7af6e465c8acbddf72073a630385feced01b3
+>>>>>>> 8be7af6e465c8acbddf72073a630385feced01b3-->
                <font>
                   <Font name="Arial" size="25.0" />
                </font>
             </Text>
-<<<<<<< HEAD
+<!--<<<<<<< HEAD-->
             <TextField fx:id="anotherOne" layoutX="300.0" layoutY="190" text="Barack">
-=======
+<!--=======
             <TextField fx:id="anotherOne" layoutX="370.0" layoutY="190.0" prefHeight="17.0" prefWidth="176.0" text="Barack">
->>>>>>> 8be7af6e465c8acbddf72073a630385feced01b3
+>>>>>>> 8be7af6e465c8acbddf72073a630385feced01b3-->
                <font>
                   <Font size="14.0" />
                </font>

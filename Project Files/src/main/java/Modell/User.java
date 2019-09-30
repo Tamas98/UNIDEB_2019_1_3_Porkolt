@@ -1,14 +1,23 @@
 package Modell;
 
+import lombok.*;
+
 import java.util.Map;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@ToString
 public class User {
 
-    String username;
+    private String username;
 
-    String password;
+    private String restore;
 
-    String restore;
+    private Map<String,String> learned;
 
-    Map<String,String> learned;
+    public String getUsername() {
+        return this.username;
+    }
 }

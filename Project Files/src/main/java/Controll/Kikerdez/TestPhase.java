@@ -31,12 +31,6 @@ public class TestPhase implements Test {
 
     public void checkAnswer(String key,String value,Text helyes){
         checkAndAdd(key,value,helyes);
-
-        for(Map.Entry<String,Integer> entry: was.entrySet()){
-            System.out.println("Key: " + entry.getKey() + "\nValue: " +entry.getValue() + "\n");
-        }
-
-        System.out.println("-----------------------------------------------------------------------");
     }
 
     private void checkAndAdd(String key,String value,Text helyes){
