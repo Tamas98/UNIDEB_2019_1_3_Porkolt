@@ -20,11 +20,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-<<<<<<< HEAD
 import javafx.scene.layout.VBox;
-=======
 import javafx.scene.layout.Pane;
->>>>>>> 9a6c5fc7751b159884991506616a52fa8803c4f6
 import javafx.stage.Stage;
 
 import java.lang.reflect.Type;
@@ -56,22 +53,16 @@ public class UdvozloController extends LoginPhase implements Initializable {
 
     public void handleNewPassButtonClicked() throws Exception{
         Parent newPassword = FXMLLoader.load(getClass().getResource("/fxml/Uj_jelszo.fxml"));
-<<<<<<< HEAD
-        chooseStage = new Stage();
-        chooseStage.setTitle("Kezdőképernyő");
-        chooseStage.setScene(new Scene(newPassword, 600, 200));
-        chooseStage.show();
-=======
+
         newPassStage = new Stage();
         newPassStage.setTitle("Kezdőképernyő");
         newPassStage.setScene(new Scene(newPassword, 600, 200));
         newPassStage.show();
         udvPane.setOpacity(0.1);
->>>>>>> 9a6c5fc7751b159884991506616a52fa8803c4f6
+
     }
 
     public void handleLogInButtonClicked() throws Exception{
-<<<<<<< HEAD
 
         String user = "";
 
@@ -84,13 +75,12 @@ public class UdvozloController extends LoginPhase implements Initializable {
                 langStage.setScene(new Scene(nxtWindow, 600, 400));
                 langStage.show();
                 udvPane.setVisible(false);
+                signIn.setVisible(false);
+                langPane.setVisible(true);
             }
         }catch(Exception e) {
             popBox("Helytelen felhaználónév,\n jelszó kombináció", "Hiba");
         }
-=======
-        signIn.setVisible(false);
-        langPane.setVisible(true);
     }
 
     public void handleFlagImageClicked() throws Exception{
@@ -99,7 +89,7 @@ public class UdvozloController extends LoginPhase implements Initializable {
         learnStage.setTitle("Nyelvválasztás");
         learnStage.setScene(new Scene(learn, 600, 400));
         learnStage.show();
->>>>>>> 9a6c5fc7751b159884991506616a52fa8803c4f6
+
     }
 
     public void changeButtonColor(){

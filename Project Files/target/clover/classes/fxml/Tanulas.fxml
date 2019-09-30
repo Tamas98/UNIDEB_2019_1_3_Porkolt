@@ -6,6 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TanulasController">
    <children>
       <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;">
@@ -15,29 +16,18 @@
                   <Font name="Arial" size="25.0" />
                </font>
             </Text>
-<!--<<<<<<< HEAD-->
+
             <Text fx:id="key" layoutX="200" layoutY="144.0" strokeType="OUTSIDE" style="-fx-padding: 20%" strokeWidth="0.0" text="Idegen nyelvű szó" textAlignment="CENTER">
-<!--=======
-            <Text fx:id="key" layoutX="118.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-padding: 20%" text="Idegen nyelvű szó" textAlignment="CENTER" wrappingWidth="147.99609375">
->>>>>>> 8be7af6e465c8acbddf72073a630385feced01b3-->
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Text>
-<!--<<<<<<< HEAD-->
             <Text layoutX="300" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-padding: 20%" text="-" textAlignment="CENTER">
-<!--=======
-            <Text layoutX="291.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-padding: 20%" text="-" textAlignment="CENTER" wrappingWidth="20.0">
-&gt;>>>>>> 8be7af6e465c8acbddf72073a630385feced01b3-->
                <font>
                   <Font name="Arial" size="15.0" />
                </font>
             </Text>
-<!--<<<<<<< HEAD-->
             <Text fx:id="value" layoutX="400" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-padding: 20%;-fx-font-size: 120%" text="Magyar megfelelő" textAlignment="CENTER">
-<!--=======
-             <Text fx:id="value" layoutX="342.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-padding: 20%" text="Magyar megfelelő" textAlignment="CENTER">
-&gt;>>>>>> 8be7af6e465c8acbddf72073a630385feced01b3-->
                <font>
                   <Font name="Arial" size="15.0" />
                </font>

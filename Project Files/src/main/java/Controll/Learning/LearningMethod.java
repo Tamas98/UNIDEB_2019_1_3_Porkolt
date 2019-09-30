@@ -39,25 +39,14 @@ public class LearningMethod implements Learn {
 		}
 		
 		public String getNextKey(String actualWord) {
-			/*String next = null;
-			
-			next = fixKeys.get(fixKeys.indexOf(actualWord) + 1);*/
 			int index = fixKeys.indexOf(actualWord)+1;
-			System.out.println(index);
-			System.out.println(fixKeys.size());
 			String hello = (String) fixKeys.toArray()[index];
 
 			return hello;
 		}
 		
 		public String getPreKey(String actualWord) {
-			/*String pre = null;
-			
-			pre = fixKeys.get(fixKeys.indexOf(actualWord) - 1);*/
-
 			int index = fixKeys.indexOf(actualWord)-1;
-			System.out.println(index);
-			System.out.println(fixKeys.size());
 			String hello = (String) fixKeys.toArray()[index];
 			
 			return hello;
