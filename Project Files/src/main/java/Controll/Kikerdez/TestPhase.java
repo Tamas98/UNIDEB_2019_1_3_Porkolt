@@ -20,6 +20,12 @@ public class TestPhase implements Test {
         return null;
     }
 
+    /***
+     * A válasz helyességét vizsgálja
+     * @param key A kulcs értkék a kért válaszból
+     * @param value Az érték-része válasz résznek
+     * @return Ha helyes a válasz igaz,ha nem,hamis
+     */
     private boolean checkCorrect(String key, String value){
         if(allWord.containsKey(key.toLowerCase())){
             return allWord.get(key.toLowerCase()).equals(value.toLowerCase());
@@ -29,17 +35,29 @@ public class TestPhase implements Test {
 
     }
 
+    /***
+     * Összefoglalja a válaszkezelő függvényeket
+     * @param key A kulcs értkék a kért válaszból
+     * @param value Az érték-része válasz résznek
+     * @param helyes A helyes választ megjelenítő Text rész ha helytelen a válasz
+     */
     public void checkAnswer(String key,String value,Text helyes){
         checkAndAdd(key,value,helyes);
     }
 
+    /***
+     * Különgyűjti a már megtanult szavakat.
+     * @param key Válasz kulcs
+     * @param value Válasz érték
+     * @param helyes A helyes választ megjelenítő Text rész ha helytelen a válasz
+     */
     private void checkAndAdd(String key,String value,Text helyes){
 
         if(was.containsKey(key)){
 
            if(checkCorrect(key,value)) {
                was.put(key, was.get(key) + 1);
-               setOnShit(key,value,helyes);
+               setOnAnsw(key,value,helyes);
            }
 
             if(was.get(key) == 2)
@@ -48,17 +66,23 @@ public class TestPhase implements Test {
         }else{
             if(checkCorrect(key,value)) {
                 was.put(key, 1);
-                setOnShit(key,value,helyes);
+                setOnAnsw(key,value,helyes);
             }
             else {
                 was.put(key, 0);
-                setOnShit(key,value, helyes);
+                setOnAnsw(key,value, helyes);
             }
         }
 
     }
 
-    private void setOnShit(String key,String value, Text toSet){
+    /***
+     * A válasz helyességétől függően állítja a visszajelző szöveget
+     * @param key Válasz kulcs
+     * @param value Válasz érték
+     * @param toSet A helyes választ megjelenítő Text rész ha helytelen a válasz
+     */
+    private void setOnAnsw(String key,String value, Text toSet){
         if(checkCorrect(key,value)){
             toSet.setText("Helyes válasz");
         }else{

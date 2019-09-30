@@ -16,9 +16,16 @@ public class LoginPhase implements Login {
     private JsonWriter jsonWriter = new JsonWriter("/Assets/users.json");
 
 
+    /***
+     *Ellenőrzi, megfelel-e a megadott kritériumoknak a felhasználó jelszava
+     * @param passwd A felhasználó által használni kívánt jelszó
+     * @param uname A felhasználó által használni kívánt felhasználónév
+     * @param users A már beregisztrált felhasználók listája
+     * @return igaz,ha még nem foglalt a felhasználónév, a jelszó hossza 16 alatt van és csak a-tól z-ig kics vagy nagy betűket tartalmaz,illetve számokat
+     */
     @Override
     public boolean validatePassword(String passwd,String uname,Map<String,User> users) {
-        if(passwd.matches("[0-9A-Za-z]*") && !users.containsValue(users.get(hasher(passwd)))){
+        if(passwd.matches("[0-9A-Za-z]*") && !users.containsValue(users.get(hasher(passwd))) && passwd.length() <= 16){
             User newUser = new User(uname,"0000",new HashMap<String,String>());
             users.put(hasher(passwd),newUser);
             jsonWriter.writeToJson(users);
@@ -29,16 +36,21 @@ public class LoginPhase implements Login {
         }
     }
 
+    /**
+     * Kódolja a felhasználó jelszavát és hozzáfűz 2 hash-t
+     * @param passwd A felhasználó jelszava
+     * @return a hashelt és kódolt jelszó
+     */
     @Override
     public String hasher(String passwd) {
         return hash1 +  caesarCoder(passwd) + hash2;
     }
-	
-	public User rightPassword(ArrayList<User> users, String passwd) {
 
-        return null;
-	}
-
+    /***
+     * Caesar kódolót használva kódolja a jelszót
+     * @param passwd A felhasználó jelszava
+     * @return a Caesar kódolt jelszó
+     */
     private StringBuffer caesarCoder(String passwd) {
     	int s = 5;
         StringBuffer result= new StringBuffer(); 
