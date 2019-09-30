@@ -37,8 +37,10 @@ public class UdvozloController {
             signIn.setStyle("-fx-background-color: #b9865d");
         }else if (quitButt.isHover()){
             quitButt.setStyle("-fx-background-color: #b9865d");
-        }else{
+        }else if(newPassButt.isHover()){
             newPassButt.setStyle("-fx-background-color: #b9865d");
+        }else {
+            regButt.setStyle("-fx-background-color: #b9865d");
         }
     }
 
@@ -46,6 +48,7 @@ public class UdvozloController {
         signIn.setStyle("-fx-background-color: #696969");
         quitButt.setStyle("-fx-background-color: #696969");
         newPassButt.setStyle("-fx-background-color: #696969");
+        regButt.setStyle("-fx-background-color: #696969");
     }
 
     public void quitButtClicked() throws Exception {

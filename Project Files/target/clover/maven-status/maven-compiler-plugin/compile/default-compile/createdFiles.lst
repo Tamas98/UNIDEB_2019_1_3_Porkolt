@@ -1,54 +1,79 @@
-Controller/Uj_jelszoController$__CLR4_3_17d7dk15ff4y8$1.class
 Controll/fileHandler/FileHandler$__CLR4_3_12424k15ff4vm.class
 Controller/TanulasController$__CLR4_3_11lu1luk15jnzcs$1.class
 Controll/Learning/Learn.class
 MainApplication.class
 Controller/NyelvvController.class
-Controll/fileHandler/WriteFile.class
+Controll/Languages/French.class
 Controller/EredmenyController$__CLR4_3_13n3nk15ff4wh$1.class
+Controll/fileHandler/WriteFile.class
+Controller/RegController$__CLR4_3_11j91j9k15mvyke$1.class
 Controll/Languages/English$__CLR4_3_1x3x3k15hw77o$1.class
-Controll/fileHandler/JsonWriter.class
 Controller/KikerdezController.class
+<<<<<<< HEAD
 Controller/KikerdezController$__CLR4_3_12an2ank15n5c2z.class
+=======
+Controll/fileHandler/JsonWriter.class
+>>>>>>> 8be7af6e465c8acbddf72073a630385feced01b3
 Controller/EredmenyController.class
 Modell/Language.class
 Controller/UdvozloController.class
 Controll/Languages/English.class
+<<<<<<< HEAD
 Controller/UdvozloController$__CLR4_3_16e6ek15ff4xx$1.class
+=======
+Controller/TanulasController$__CLR4_3_11fx1fxk15j3g25$1.class
+>>>>>>> 8be7af6e465c8acbddf72073a630385feced01b3
 Modell/User.class
 Controller/EredmenyController$__CLR4_3_13n3nk15ff4wh.class
-Main$__CLR4_3_17q7qk15ff4yf$1.class
 Controll/Learning/LearningMethod$__CLR4_3_11ep1epk15j11rf$1.class
+Main$__CLR4_3_17q7qk15ff4yf$1.class
+Controller/UdvozloController$__CLR4_3_11hq1hqk15mhtp0$1.class
+Controll/Languages/French$__CLR4_3_11ho1hok15m3ch2.class
 Controll/Learning/LearningMethod.class
 Controll/Bejelentkezes/Login.class
 Controll/fileHandler/FileHandler$__CLR4_3_12424k15ff4vm$1.class
 Controller/TanulasController$__CLR4_3_11lu1luk15jnzcs.class
 Controll/fileHandler/JsonWriter$__CLR4_3_13838k15ff4w7.class
+Controller/RegController.class
 Controll/fileHandler/JsonReader$__CLR4_3_12h2hk15ff4vx.class
 Controll/Bejelentkezes/LoginPlease$__CLR4_3_11ho1hok15jjdh5$1.class
 Controller/KikerdezController$__CLR4_3_12an2ank15n5c2z$1.class
 Controll/Kikerdez/TestPhase$__CLR4_3_12an2ank15n4kjw$1.class
 Controll/Bejelentkezes/LoginPlease.class
-Controller/UdvozloController$__CLR4_3_16e6ek15ff4xx.class
 Controller/TanulasController.class
+Controller/UdvozloController$__CLR4_3_11hq1hqk15mhtp0.class
+Controller/Uj_jelszoController$__CLR4_3_11jm1jmk15mvykz.class
 MainApplication$__CLR4_3_17s7sk15ff4yl.class
 Main.class
 Controller/NyelvvController$__CLR4_3_14c4ck15ff4x1$1.class
 Controll/Kikerdez/TestPhase$__CLR4_3_12an2ank15n4kjw.class
 Controll/Learning/LearningMethod$__CLR4_3_11ep1epk15j11rf.class
 Controll/fileHandler/JsonWriter$__CLR4_3_13838k15ff4w7$1.class
+<<<<<<< HEAD
 Controller/Uj_jelszoController$__CLR4_3_17d7dk15ff4y8.class
 Controll/Kikerdez/Test.class
 Controll/fileHandler/FileHandler.class
+=======
+Controll/Kikerdez/TestPhase$__CLR4_3_1cck15gnopo$1.class
+Controll/Kikerdez/Test.class
+Controll/Bejelentkezes/LoginPlease$__CLR4_3_100k15ff4to.class
+>>>>>>> 8be7af6e465c8acbddf72073a630385feced01b3
 Controll/Kikerdez/TestPhase.class
+Controll/fileHandler/FileHandler.class
 Controll/fileHandler/JsonReader.class
 Controll/fileHandler/JsonReader$__CLR4_3_12h2hk15ff4vx$1.class
-Controll/fileHandler/ReadFile.class
 Controller/NyelvvController$__CLR4_3_14c4ck15ff4x1.class
+Controll/fileHandler/ReadFile.class
 Controller/TanulasController$1.class
+<<<<<<< HEAD
 Controll/Bejelentkezes/LoginPlease$__CLR4_3_11ho1hok15jjdh5.class
+=======
+Controller/RegController$__CLR4_3_11j91j9k15mvyke.class
+>>>>>>> 8be7af6e465c8acbddf72073a630385feced01b3
 Controller/Uj_jelszoController.class
+Controll/Languages/French$__CLR4_3_11ho1hok15m3ch2$1.class
 Controller/KikerdezController$1.class
+Controller/Uj_jelszoController$__CLR4_3_11jm1jmk15mvykz$1.class
 Controll/Languages/English$__CLR4_3_1x3x3k15hw77o.class
 MainApplication$__CLR4_3_17s7sk15ff4yl$1.class
 Modell/Word.class

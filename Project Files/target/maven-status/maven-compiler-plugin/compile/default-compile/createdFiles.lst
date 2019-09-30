@@ -2,8 +2,8 @@ Controll/Learning/Learn.class
 MainApplication.class
 Controller/NyelvvController.class
 Controll/fileHandler/WriteFile.class
-Controll/fileHandler/JsonWriter.class
 Controller/KikerdezController.class
+Controll/fileHandler/JsonWriter.class
 Controller/EredmenyController.class
 Modell/Language.class
 Controller/UdvozloController.class
@@ -15,8 +15,8 @@ Controll/Bejelentkezes/LoginPlease.class
 Controller/TanulasController.class
 Main.class
 Controll/Kikerdez/Test.class
-Controll/fileHandler/FileHandler.class
 Controll/Kikerdez/TestPhase.class
+Controll/fileHandler/FileHandler.class
 Controll/fileHandler/JsonReader.class
 Controll/fileHandler/ReadFile.class
 Controller/TanulasController$1.class
