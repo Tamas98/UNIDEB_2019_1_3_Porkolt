@@ -69,12 +69,6 @@ public class UdvozloController extends LoginPhase implements Initializable {
         try{
             user = users.keySet().stream().filter(u -> u.equals("admin")? u.equals(passWord.getText()):u.equals(hasher(passWord.getText()))).collect(Collectors.toList()).get(0);
             if(users.get(user).getUsername().equals(userName.getText())){
-                Parent nxtWindow = FXMLLoader.load(getClass().getResource("/fxml/Nyelvvalasztas.fxml"));
-                Stage langStage = new Stage();
-                langStage.setTitle("Választható nyelvek");
-                langStage.setScene(new Scene(nxtWindow, 600, 400));
-                langStage.show();
-                udvPane.setVisible(false);
                 signIn.setVisible(false);
                 langPane.setVisible(true);
             }
