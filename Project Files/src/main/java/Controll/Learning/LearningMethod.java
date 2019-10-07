@@ -13,10 +13,6 @@ public class LearningMethod implements Learn {
 		public static List<String> fixKeys = new ArrayList<String>();
 
 		public static Map<String,String> FinalMap = new HashMap<>();
-		
-		public Map<String,String> readFullMap() {
-			return null;
-		}
 
 		public void get10Random(Map<String,String> full) {
 

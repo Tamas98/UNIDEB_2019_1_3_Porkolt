@@ -4,8 +4,6 @@ import java.util.Map;
 
 public interface Learn {
 	
-	Map<String,String> readFullMap();
-	
 	void get10Random(Map<String,String> full);
 	
 	Map<String, String> getFinalMap();
