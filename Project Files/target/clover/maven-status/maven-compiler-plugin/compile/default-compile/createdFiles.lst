@@ -1,4 +1,3 @@
-Controll/Kikerdez/TestPhase$__CLR4_3_1qqk166q4xz.class
 Controll/Languages/English$__CLR4_3_11u1uk166q4y7.class
 Controller/NyelvvController$__CLR4_3_16262k166q50d.class
 Controll/Languages/English$__CLR4_3_11u1uk166q4y7$1.class
@@ -12,7 +11,7 @@ Controll/Languages/French.class
 Controll/fileHandler/WriteFile.class
 Controller/TanulasController$__CLR4_3_16r6rk16a5ege$1.class
 Controll/fileHandler/FileHandler$__CLR4_3_13838k166q4z4.class
-Controll/Bejelentkezes/LoginPhase$__CLR4_3_116f16fk167wnat$1.class
+Controll/Bejelentkezes/LoginPhase$__CLR4_3_11gr1grk16dffey.class
 Controll/fileHandler/JsonWriter$__CLR4_3_14c4ck166q4zk$1.class
 Main$__CLR4_3_1b4b4k166q51h$1.class
 Controll/Languages/adminUser$__CLR4_3_11y1yk166q4yg.class
@@ -23,6 +22,7 @@ Controller/KikerdezController.class
 Controller/EredmenyController.class
 Modell/Language.class
 Controller/UdvozloController.class
+Controll/Bejelentkezes/LoginPhase$__CLR4_3_11gr1grk16dffey$1.class
 Controll/Languages/English.class
 Modell/User.class
 Controll/Learning/LearningMethod.class
@@ -34,7 +34,6 @@ MainApplication$__CLR4_3_11ed1edk168v4ww.class
 Controller/RegController.class
 Controller/UdvozloController$1.class
 Modell/User$__CLR4_3_1tetek167ebfs$1.class
-Controll/Bejelentkezes/LoginPhase$__CLR4_3_116f16fk167wnat.class
 Controller/TanulasController.class
 Controller/UdvozloController$__CLR4_3_11ek1ekk16a5ejc.class
 Controller/NyelvvController$__CLR4_3_16262k166q50d$1.class
@@ -57,10 +56,11 @@ Controll/fileHandler/FileHandler$__CLR4_3_13838k166q4z4$1.class
 Controll/fileHandler/FileHandler.class
 Controll/Kikerdez/TestPhase.class
 Controll/fileHandler/JsonReader.class
-Controll/Kikerdez/TestPhase$__CLR4_3_1qqk166q4xz$1.class
 Controll/fileHandler/ReadFile.class
+Controll/Kikerdez/TestPhase$__CLR4_3_11hi1hik16dffg3.class
 Controller/TanulasController$1.class
 Controller/Uj_jelszoController.class
 Controll/fileHandler/JsonWriter$__CLR4_3_14c4ck166q4zk.class
+Controll/Kikerdez/TestPhase$__CLR4_3_11hi1hik16dffg3$1.class
 Controller/RegController$__CLR4_3_1178178k1680nwd.class
 Controll/Languages/French$__CLR4_3_11w1wk166q4yc.class

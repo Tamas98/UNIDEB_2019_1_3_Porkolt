@@ -15,7 +15,6 @@ public class LoginPhase implements Login {
 
     private JsonWriter jsonWriter = new JsonWriter("/Assets/users.json");
 
-
     /***
      *Ellenőrzi, megfelel-e a megadott kritériumoknak a felhasználó jelszava
      * @param passwd A felhasználó által használni kívánt jelszó

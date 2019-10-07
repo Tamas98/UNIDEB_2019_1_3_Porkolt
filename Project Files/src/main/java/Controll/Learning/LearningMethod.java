@@ -1,6 +1,7 @@
 package Controll.Learning;
 
 import javafx.scene.text.Text;
+
 import java.util.Map;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -52,16 +53,14 @@ public class LearningMethod implements Learn {
 			return hello;
 		}
 		
-		public void setNextWord(String actualWord, Text key,Text value) {
+		public void setNextWord(String actualWord, Text key, Text value) {
 			String nextHun = getNextKey(actualWord);
-			System.out.println(nextHun);
 			key.setText(nextHun);
 			value.setText(FinalMap.get(nextHun));
 		}
 
 		public void setPreWord(String actualWord,Text key,Text value) {
 			String preHun = getPreKey(actualWord);
-			System.out.println(preHun);
 			key.setText(preHun);
 			value.setText(FinalMap.get(preHun));
 		}
