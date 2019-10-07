@@ -48,8 +48,8 @@ public class LoginPhaseTest {
         String testPasswd = "Hello123";
 
         Assert.assertNotNull(loginPhase.hasher(testPasswd)); //Működik-e a függvény
-        Assert.assertEquals("npnpnipibnvajoofaHello123phuboanovnipkanvp",loginPhase.hasher(testPasswd)); //hashellés sikerességének ellenőrzése
-        Assert.assertSame(testPasswd,loginPhase.hasher(testPasswd)); //Tesz-e valamit a stringhez
+        Assert.assertEquals("npnpnipibnvajoofaMjqqtPQRphuboanovnipkanvp",loginPhase.hasher(testPasswd)); //hashellés sikerességének ellenőrzése
+        Assert.assertNotSame(testPasswd,loginPhase.hasher(testPasswd)); //Tesz-e valamit a stringhez
 
     }
 }

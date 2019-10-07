@@ -1,24 +1,22 @@
 package Controll.Kikerdez;
 
-import Controller.KikerdezController;
 import Controller.TanulasController;
 import javafx.scene.text.Text;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+@NoArgsConstructor
 public class TestPhase implements Test {
 
-    private Map<String,String> allWord = TanulasController.language;
+    private static Map<String,String> allWord = TanulasController.language;
 
-    private Map<String,Integer> was = new HashMap<>();
+    private static Map<String,Integer> was = new HashMap<>();
 
     public static  Map<String,String> learned = new HashMap<>();
-
-    public Map<String, String> getLearned() {
-        return null;
-    }
 
     /***
      * A válasz helyességét vizsgálja

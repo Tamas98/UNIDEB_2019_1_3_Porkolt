@@ -29,8 +29,6 @@ public class KikerdezController extends TestPhase implements Initializable {
 
     private Random random = new Random();
 
-
-
     @FXML
     public Button nextButt,quitButt;
 
