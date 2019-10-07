@@ -35,19 +35,21 @@ public class LoginPhaseTest {
         String test04 = "asfasfa$fsafasfa";
         String test05="1234567891011120";
 
-        Assert.assertEquals(true,loginPhase.validatePassword(test01,testAccName,testAccounts));
-        Assert.assertEquals(false,loginPhase.validatePassword(test02,testAccName,testAccounts));
-        Assert.assertEquals(false,loginPhase.validatePassword(test03,testAccName,testAccounts));
-        Assert.assertEquals(false,loginPhase.validatePassword(test04,testAccName,testAccounts));
-        Assert.assertEquals(true,loginPhase.validatePassword(test05,testAccName,testAccounts));
-        Assert.assertEquals(false,loginPhase.validatePassword(test01,"tester01",testAccounts));
+        Assert.assertEquals(true,loginPhase.validatePassword(test01,testAccName,testAccounts)); //Egy valid password tesztelése
+        Assert.assertEquals(false,loginPhase.validatePassword(test02,testAccName,testAccounts)); //A maximálisnál hosszabb jelszó elfogadásának tesztelése
+        Assert.assertEquals(false,loginPhase.validatePassword(test03,testAccName,testAccounts)); //Speciális karakter a jelszó elején
+        Assert.assertEquals(false,loginPhase.validatePassword(test04,testAccName,testAccounts)); //Speciális karakter a jelszó közepén
+        Assert.assertEquals(true,loginPhase.validatePassword(test05,testAccName,testAccounts)); //Éppen a megengedett hosszúságú jelszó
+        Assert.assertEquals(false,loginPhase.validatePassword(test01,"tester01",testAccounts)); //Már használatban lévő felhasználónév tesztelése
     }
 
     @Test
     public void TestCoders(){
         String testPasswd = "Hello123";
 
-        Assert.assertEquals("npnpnipibnvajoofaHello123phuboanovnipkanvp",loginPhase.hasher(testPasswd));
+        Assert.assertNotNull(loginPhase.hasher(testPasswd)); //Működik-e a függvény
+        Assert.assertEquals("npnpnipibnvajoofaHello123phuboanovnipkanvp",loginPhase.hasher(testPasswd)); //hashellés sikerességének ellenőrzése
+        Assert.assertSame(testPasswd,loginPhase.hasher(testPasswd)); //Tesz-e valamit a stringhez
 
     }
 }
